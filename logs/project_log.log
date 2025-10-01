@@ -1,0 +1,30 @@
+2025-09-30 18:27:53 | INFO | {'message': 'I just loved a meme! It was exciting.', 'author': 'Alice', 'timestamp': '2025-09-30 18:27:53', 'category': 'humor', 'sentiment': 0.13, 'keyword_mentioned': 'meme', 'message_length': 37}
+2025-09-30 18:27:54 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just loved a meme! It was exciting.', 'author': 'Alice', 'timestamp': '2025-09-30 18:27:53', 'category': 'humor', 'sentiment': 0.13, 'keyword_mentioned': 'meme', 'message_length': 37}
+2025-09-30 18:27:59 | INFO | {'message': 'I just tried recipe! It was exciting.', 'author': 'Alice', 'timestamp': '2025-09-30 18:27:59', 'category': 'food', 'sentiment': 0.55, 'keyword_mentioned': 'recipe', 'message_length': 37}
+2025-09-30 18:27:59 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just tried recipe! It was exciting.', 'author': 'Alice', 'timestamp': '2025-09-30 18:27:59', 'category': 'food', 'sentiment': 0.55, 'keyword_mentioned': 'recipe', 'message_length': 37}
+2025-09-30 18:28:04 | INFO | {'message': 'I just found game! It was exciting.', 'author': 'Eve', 'timestamp': '2025-09-30 18:28:04', 'category': 'gaming', 'sentiment': 0.13, 'keyword_mentioned': 'game', 'message_length': 35}
+2025-09-30 18:28:04 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just found game! It was exciting.', 'author': 'Eve', 'timestamp': '2025-09-30 18:28:04', 'category': 'gaming', 'sentiment': 0.13, 'keyword_mentioned': 'game', 'message_length': 35}
+2025-09-30 18:28:09 | INFO | {'message': 'I just found recipe! It was boring.', 'author': 'Eve', 'timestamp': '2025-09-30 18:28:09', 'category': 'food', 'sentiment': 0.65, 'keyword_mentioned': 'recipe', 'message_length': 35}
+2025-09-30 18:28:09 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just found recipe! It was boring.', 'author': 'Eve', 'timestamp': '2025-09-30 18:28:09', 'category': 'food', 'sentiment': 0.65, 'keyword_mentioned': 'recipe', 'message_length': 35}
+2025-09-30 18:28:11 | WARNING | Producer interrupted by user.
+2025-09-30 18:28:11 | INFO | Kafka producer closed.
+2025-09-30 18:28:11 | INFO | Producer shutting down.
+2025-09-30 19:00:26 | INFO | Logging to file: logs/project_log.log
+2025-09-30 19:00:26 | INFO | Log sanitization enabled, personal info removed
+2025-09-30 19:00:26 | INFO | START earthquake producer...
+2025-09-30 19:00:27 | INFO | Kafka producer connected to localhost:9092
+2025-09-30 19:00:27 | INFO | {'id': 'ci41101167', 'place': '16 km NNE of Pine Valley, CA', 'mag': 0.8, 'time': '2025-09-30 23:47:40', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ci41101167', 'coordinates': [-116.4593333, 32.9481667, 8.74]}
+2025-09-30 19:00:27 | INFO | Sent message to Kafka topic 'project_json': {'id': 'ci41101167', 'place': '16 km NNE of Pine Valley, CA', 'mag': 0.8, 'time': '2025-09-30 23:47:40', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ci41101167', 'coordinates': [-116.4593333, 32.9481667, 8.74]}
+2025-09-30 19:00:27 | INFO | {'id': 'ak025cjvl7s0', 'place': '9 km S of Susitna, Alaska', 'mag': 2.6, 'time': '2025-09-30 23:30:33', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ak025cjvl7s0', 'coordinates': [-150.4837, 61.4623, 55.1]}
+2025-09-30 19:00:27 | INFO | Sent message to Kafka topic 'project_json': {'id': 'ak025cjvl7s0', 'place': '9 km S of Susitna, Alaska', 'mag': 2.6, 'time': '2025-09-30 23:30:33', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ak025cjvl7s0', 'coordinates': [-150.4837, 61.4623, 55.1]}
+2025-09-30 19:00:27 | INFO | {'id': 'us6000rdxa', 'place': 'Kermadec Islands, New Zealand', 'mag': 5.2, 'time': '2025-09-30 23:29:58', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/us6000rdxa', 'coordinates': [-177.724, -30.6212, 35]}
+2025-09-30 19:00:27 | INFO | Sent message to Kafka topic 'project_json': {'id': 'us6000rdxa', 'place': 'Kermadec Islands, New Zealand', 'mag': 5.2, 'time': '2025-09-30 23:29:58', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/us6000rdxa', 'coordinates': [-177.724, -30.6212, 35]}
+2025-09-30 19:00:27 | INFO | {'id': 'ok2025test', 'place': '11 km SE of Katie, Oklahoma', 'mag': 1.49, 'time': '2025-09-30 23:12:27', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ok2025test', 'coordinates': [-97.26966667, 34.49633333, 0]}
+2025-09-30 19:00:27 | INFO | Sent message to Kafka topic 'project_json': {'id': 'ok2025test', 'place': '11 km SE of Katie, Oklahoma', 'mag': 1.49, 'time': '2025-09-30 23:12:27', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ok2025test', 'coordinates': [-97.26966667, 34.49633333, 0]}
+2025-09-30 19:00:27 | INFO | {'id': 'ci41101159', 'place': '12 km WSW of Morongo Valley, CA', 'mag': 1.27, 'time': '2025-09-30 23:06:16', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ci41101159', 'coordinates': [-116.7018333, 34.0081667, 15.56]}
+2025-09-30 19:00:27 | INFO | Sent message to Kafka topic 'project_json': {'id': 'ci41101159', 'place': '12 km WSW of Morongo Valley, CA', 'mag': 1.27, 'time': '2025-09-30 23:06:16', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ci41101159', 'coordinates': [-116.7018333, 34.0081667, 15.56]}
+2025-09-30 19:02:10 | INFO | {'id': 'ak025cjvrfc9', 'place': '92 km NNW of Karluk, Alaska', 'mag': 0.8, 'time': '2025-09-30 23:59:30', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ak025cjvrfc9', 'coordinates': [-154.8709, 58.3665, 6.7]}
+2025-09-30 19:02:11 | INFO | Sent message to Kafka topic 'project_json': {'id': 'ak025cjvrfc9', 'place': '92 km NNW of Karluk, Alaska', 'mag': 0.8, 'time': '2025-09-30 23:59:30', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ak025cjvrfc9', 'coordinates': [-154.8709, 58.3665, 6.7]}
+2025-09-30 19:04:53 | WARNING | Producer interrupted by user.
+2025-09-30 19:04:53 | INFO | Kafka producer closed.
+2025-09-30 19:04:53 | INFO | Producer shutting down.

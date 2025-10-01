@@ -132,3 +132,8 @@ PyQt6; sys_platform != "win32"
 # Kafka Python client (lightweight, ~1 MB)
 # Supports Kafka 3.5+ with KRaft mode (no ZooKeeper required)
 kafka-python-ng
+
+# ======================================================
+# Install Requests for API call
+# ======================================================
+requests

@@ -1,10 +1,16 @@
 """
-basic_json_consumer_case.py
+earthquake_consumer_aaron.py
 
-Read a JSON-formatted file as it is being written. 
+Consume json messages from a Kafka topic and visualize author counts in real-time.
 
-Example JSON message:
-{"message": "I just saw a movie! It was amazing.", "author": "Eve"}
+JSON is a set of key:value pairs. 
+
+Example serialized Kafka message
+"{\"message\": \"I love Python!\", \"author\": \"Eve\"}"
+
+Example JSON message (after deserialization) to be analyzed
+{"message": "I love Python!", "author": "Eve"}
+
 """
 
 #####################################
@@ -12,45 +18,68 @@ Example JSON message:
 #####################################
 
 # Import packages from Python Standard Library
-import json
-import os # for file operations
-import sys # to exit early
-import time
-import pathlib
+import os
+import json  # handle JSON parsing
 from collections import defaultdict  # data structure for counting author occurrences
+
+# Import external packages
+from dotenv import load_dotenv
 
 # IMPORTANT
 # Import Matplotlib.pyplot for live plotting
+# Use the common alias 'plt' for Matplotlib.pyplot
+# Know pyplot well
 import matplotlib.pyplot as plt
 
 # Import functions from local modules
+from utils.utils_consumer import create_kafka_consumer
 from utils.utils_logger import logger
 
+#####################################
+# Load Environment Variables
+#####################################
+
+load_dotenv()
 
 #####################################
-# Set up Paths - read from the file the producer writes
+# Getter Functions for .env Variables
 #####################################
 
-PROJECT_ROOT = pathlib.Path(__file__).parent.parent
-DATA_FOLDER = PROJECT_ROOT.joinpath("data")
-DATA_FILE = DATA_FOLDER.joinpath("buzz_live.json")
 
-logger.info(f"Project root: {PROJECT_ROOT}")
-logger.info(f"Data folder: {DATA_FOLDER}")
-logger.info(f"Data file: {DATA_FILE}")
+def get_kafka_topic() -> str:
+    """Fetch Kafka topic from environment or use default."""
+    topic = os.getenv("PROJECT_TOPIC", "unknown_topic")
+    logger.info(f"Kafka topic: {topic}")
+    return topic
+
+
+def get_kafka_consumer_group_id() -> str:
+    """Fetch Kafka consumer group id from environment or use default."""
+    group_id: str = os.getenv("BUZZ_CONSUMER_GROUP_ID", "default_group")
+    logger.info(f"Kafka consumer group id: {group_id}")
+    return group_id
+
 
 #####################################
 # Set up data structures
 #####################################
 
+# Initialize a dictionary to store author counts
 author_counts = defaultdict(int)
 
 #####################################
 # Set up live visuals
 #####################################
 
+# Use the subplots() method to create a tuple containing
+# two objects at once:
+# - a figure (which can have many axis)
+# - an axis (what they call a chart in Matplotlib)
 fig, ax = plt.subplots()
-plt.ion()  # Turn on interactive mode for live updates
+
+# Use the ion() method (stands for "interactive on")
+# to turn on interactive mode for live updates
+plt.ion()
 
 #####################################
 # Define an update chart function for live plotting
@@ -69,12 +98,12 @@ def update_chart():
 
     # Create a bar chart using the bar() method.
     # Pass in the x list, the y list, and the color
-    ax.bar(authors_list, counts_list, color="green")
+    ax.bar(authors_list, counts_list, color="skyblue")
 
     # Use the built-in axes methods to set the labels and title
     ax.set_xlabel("Authors")
     ax.set_ylabel("Message Counts")
-    ax.set_title("Basic Real-Time Author Message Counts")
+    ax.set_title("Real-Time Author Message Counts")
 
     # Use the set_xticklabels() method to rotate the x-axis labels
     # Pass in the x list, specify the rotation angle is 45 degrees,
@@ -93,13 +122,13 @@ def update_chart():
 
 
 #####################################
-# Process Message Function
-#####################################
+# Function to process a single message
+# #####################################
 
 
 def process_message(message: str) -> None:
     """
-    Process a single JSON message and update the chart.
+    Process a single JSON message from Kafka and update the chart.
 
     Args:
         message (str): The JSON message as a string.
@@ -110,7 +139,7 @@ def process_message(message: str) -> None:
 
         # Parse the JSON string into a Python dictionary
         message_dict: dict = json.loads(message)
-       
+
         # Ensure the processed JSON is logged for debugging
         logger.info(f"Processed JSON message: {message_dict}")
 
@@ -131,7 +160,6 @@ def process_message(message: str) -> None:
 
             # Log the updated chart
             logger.info(f"Chart updated successfully for message: {message}")
-
         else:
             logger.error(f"Expected a dictionary but got: {type(message_dict)}")
 
@@ -142,54 +170,46 @@ def process_message(message: str) -> None:
 
 
 #####################################
-# Main Function
+# Define main function for this module
 #####################################
 
 
 def main() -> None:
     """
     Main entry point for the consumer.
-    - Monitors a file for new messages and updates a live chart.
-    """
 
+    - Reads the Kafka topic name and consumer group ID from environment variables.
+    - Creates a Kafka consumer using the `create_kafka_consumer` utility.
+    - Polls messages and updates a live chart.
+    """
     logger.info("START consumer.")
 
-    # Verify the file we're monitoring exists if not, exit early
-    if not DATA_FILE.exists():
-        logger.error(f"Data file {DATA_FILE} does not exist. Exiting.")
-        sys.exit(1)
+    # fetch .env content
+    topic = get_kafka_topic()
+    group_id = get_kafka_consumer_group_id()
+    logger.info(f"Consumer: Topic '{topic}' and group '{group_id}'...")
 
+    # Create the Kafka consumer using the helpful utility function.
+    consumer = create_kafka_consumer(topic, group_id)
+
+    # Poll and process messages
+    logger.info(f"Polling messages from topic '{topic}'...")
     try:
-        # Try to open the file and read from it
-        with open(DATA_FILE, "r") as file:
-
-            # Move the cursor to the end of the file
-            file.seek(0, os.SEEK_END)
-            print("Consumer is ready and waiting for new JSON messages...")
-
-            while True:
-                # Read the next line from the file
-                line = file.readline()
-
-                # If we strip whitespace from the line and it's not empty
-                if line.strip():  
-                    # Process this new message
-                    process_message(line)
-                else:
-                    # otherwise, wait a half second before checking again
-                    logger.debug("No new messages. Waiting...")
-                    delay_secs = 0.5 
-                    time.sleep(delay_secs) 
-                    continue 
-
+        for message in consumer:
+            # message is a complex object with metadata and value
+            # Use the value attribute to extract the message as a string
+            message_str = message.value
+            logger.debug(f"Received message at offset {message.offset}: {message_str}")
+            process_message(message_str)
     except KeyboardInterrupt:
-        logger.info("Consumer interrupted by user.")
+        logger.warning("Consumer interrupted by user.")
     except Exception as e:
-        logger.error(f"Unexpected error: {e}")
+        logger.error(f"Error while consuming messages: {e}")
     finally:
-        plt.ioff()
-        plt.show()
-        logger.info("Consumer closed.")
+        consumer.close()
+        logger.info(f"Kafka consumer for topic '{topic}' closed.")
+
+    logger.info(f"END consumer for topic '{topic}' and group '{group_id}'.")
 
 
 #####################################
@@ -197,4 +217,12 @@ def main() -> None:
 #####################################
 
 if __name__ == "__main__":
+
+    # Call the main function to start the consumer
     main()
+
+    # Turn off interactive mode after completion
+    plt.ioff()  
+
+    # Display the final chart
+    plt.show()
