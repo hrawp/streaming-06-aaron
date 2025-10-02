@@ -3,11 +3,12 @@ Earthquake Kafka Consumer with Rolling Window and Cluster Visualization
 
 - Consumes JSON messages from Kafka
 - Each message includes location, magnitude, and time of earthquake
-- Live plots a US map showing:
+- Live plots a truncated US map showing:
   - Red dots for isolated earthquakes
   - Colored clusters for nearby quakes (3+ within 100km)
   - Semi-transparent circles around clusters
   - Rolling window of last N minutes (default: 30)
+  - Inset map for Alaska
 """
 
 import os
@@ -19,23 +20,21 @@ import cartopy.feature as cfeature
 from matplotlib.patches import Circle
 from sklearn.cluster import DBSCAN
 from matplotlib.colors import to_hex
-from collections import defaultdict
 from datetime import datetime, timedelta
 from dotenv import load_dotenv
 from utils.utils_logger import logger
 from utils.utils_consumer import create_kafka_consumer
-import matplotlib.cm as cm
+import matplotlib
 
 # Load .env settings
 load_dotenv()
 
-# Initialize plot
+# Interactive plotting
 plt.ion()
 
 # Global quake list
 quake_data = []
 
-# Get environment variables
 def get_kafka_topic() -> str:
     return os.getenv("PROJECT_TOPIC", "earthquake-topic")
 
@@ -43,29 +42,45 @@ def get_kafka_consumer_group_id() -> str:
     return os.getenv("BUZZ_CONSUMER_GROUP_ID", "eq_group")
 
 # Rolling window duration (minutes)
-ROLLING_MINUTES = 30
+ROLLING_MINUTES = 240
 
 # Cluster proximity (km)
-CLUSTER_RADIUS_KM = 100
+CLUSTER_RADIUS_KM = 1000
 
+# --- Initialize figure with main map + Alaska inset ---
+fig = plt.figure(figsize=(12, 8))
 
-def plot_earthquakes_with_clusters(quakes, cluster_radius_km=100, minutes_back=30):
-    # Filter to recent quakes
-    time_cutoff = datetime.utcnow() - timedelta(minutes=minutes_back)
-    recent_quakes = [q for q in quakes if q["timestamp"] >= time_cutoff]
-    if not recent_quakes:
-        return
+# Main map: western/central US (cut off east of Iowa ~ -93°)
+ax_main = fig.add_axes([0.05, 0.05, 0.9, 0.9], projection=ccrs.PlateCarree())
+ax_main.set_extent([-130, -93, 24, 50], crs=ccrs.PlateCarree())
 
-    # Prepare map
-    fig, ax = plt.subplots(figsize=(10, 7), subplot_kw={'projection': ccrs.PlateCarree()})
-    ax.set_extent([-130, -65, 24, 50], crs=ccrs.PlateCarree())
+# Alaska inset floating in Pacific west of California
+ax_ak = fig.add_axes([0.02, 0.02, 0.35, 0.35], projection=ccrs.PlateCarree())
+ax_ak.set_extent([-170, -130, 52, 72], crs=ccrs.PlateCarree())
+
+# Status text (on main map)
+status_text = ax_main.text(
+    0.01, 0.99,
+    "",
+    transform=ax_main.transAxes,
+    verticalalignment='top',
+    horizontalalignment='left',
+    fontsize=10,
+    bbox=dict(facecolor='white', alpha=0.7, edgecolor='none')
+)
+
+def draw_basemap(ax, title=None):
     ax.add_feature(cfeature.COASTLINE)
     ax.add_feature(cfeature.BORDERS, linestyle=':')
     ax.add_feature(cfeature.STATES, linestyle='-', edgecolor='gray')
-    ax.set_title(f"US Earthquakes (Last {minutes_back} Minutes)", fontsize=14)
+    if title:
+        ax.set_title(title, fontsize=12)
 
-    # Coordinates
-    coords = np.array([[q["lat"], q["lon"]] for q in recent_quakes])
+def plot_quakes_on_axis(ax, quakes, cluster_radius_km=100):
+    if not quakes:
+        return
+
+    coords = np.array([[q["lat"], q["lon"]] for q in quakes])
     kms_per_radian = 6371.0088
     epsilon = cluster_radius_km / kms_per_radian
     coords_rad = np.radians(coords)
@@ -73,26 +88,24 @@ def plot_earthquakes_with_clusters(quakes, cluster_radius_km=100, minutes_back=3
     db = DBSCAN(eps=epsilon, min_samples=3, algorithm='ball_tree', metric='haversine')
     labels = db.fit_predict(coords_rad)
 
-    # Color each cluster
     unique_labels = sorted(set(labels) - {-1})
-    cmap = cm.get_cmap('tab10', len(unique_labels))
-    cluster_colors = {label: to_hex(cmap(i)) for i, label in enumerate(unique_labels)}
+    cmap = matplotlib.colormaps.get_cmap('tab10')
+    cluster_colors = {label: to_hex(cmap(i / max(1, len(unique_labels) - 1)))
+                      for i, label in enumerate(unique_labels)}
 
-    for i, quake in enumerate(recent_quakes):
+    # Plot quakes
+    for i, quake in enumerate(quakes):
         lon = quake["lon"]
         lat = quake["lat"]
         mag = quake["mag"]
         label = labels[i]
-
         color = 'red' if label == -1 else cluster_colors[label]
-
         ax.plot(lon, lat, marker='o', color=color, markersize=mag * 2, transform=ccrs.PlateCarree())
-        ax.text(lon + 0.3, lat + 0.2, f"M {mag}", fontsize=8, transform=ccrs.PlateCarree())
-
         quake["cluster"] = label
 
+    # Cluster circles
     for label in unique_labels:
-        members = [q for q in recent_quakes if q["cluster"] == label]
+        members = [q for q in quakes if q["cluster"] == label]
         if len(members) >= 3:
             avg_lat = np.mean([q["lat"] for q in members])
             avg_lon = np.mean([q["lon"] for q in members])
@@ -106,11 +119,40 @@ def plot_earthquakes_with_clusters(quakes, cluster_radius_km=100, minutes_back=3
             )
             ax.add_patch(circle)
 
-    plt.tight_layout()
+def plot_earthquakes_with_clusters(quakes, cluster_radius_km=100, minutes_back=30):
+    time_cutoff = datetime.utcnow() - timedelta(minutes=minutes_back)
+    recent_quakes = [q for q in quakes if q["timestamp"] >= time_cutoff]
+    if not recent_quakes:
+        return
+
+    # --- Clear axes ---
+    ax_main.clear()
+    ax_ak.clear()
+
+    # --- Redraw basemaps ---
+    ax_main.set_extent([-130, -93, 24, 50], crs=ccrs.PlateCarree())
+    draw_basemap(ax_main, f"US West/Central Earthquakes (Last {minutes_back} Minutes)")
+
+    ax_ak.set_extent([-170, -130, 52, 72], crs=ccrs.PlateCarree())
+    draw_basemap(ax_ak, "Alaska")
+
+    # --- Split quakes by region ---
+    ak_quakes = [q for q in recent_quakes if q["lon"] < -130 and q["lat"] > 50]
+    main_quakes = [q for q in recent_quakes if q not in ak_quakes]
+
+    # --- Plot ---
+    plot_quakes_on_axis(ax_main, main_quakes, cluster_radius_km)
+    plot_quakes_on_axis(ax_ak, ak_quakes, cluster_radius_km)
+
+    # --- Update status text ---
+    last = recent_quakes[-1]
+    stamp = last["timestamp"].strftime("%Y-%m-%d %H:%M:%S UTC")
+    status = (f"Last quake: M {last['mag']:.1f} @ "
+              f"({last['lat']:.2f}, {last['lon']:.2f})\n{stamp}")
+    status_text.set_text(status)
+
     plt.draw()
     plt.pause(0.01)
-    plt.clf()
-
 
 def process_message(message: str) -> None:
     try:
@@ -139,7 +181,6 @@ def process_message(message: str) -> None:
     except Exception as e:
         logger.error(f"Error processing message: {e}")
 
-
 def main():
     logger.info("START earthquake consumer")
     topic = get_kafka_topic()
@@ -159,7 +200,6 @@ def main():
     finally:
         consumer.close()
         logger.info("Consumer closed.")
-
 
 if __name__ == "__main__":
     main()
