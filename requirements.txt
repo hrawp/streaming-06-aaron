@@ -103,7 +103,7 @@ python-dotenv
 numpy
 
 # Data manipulation and analysis (built on numpy, 10-20 MB)
-pandas
+#pandas
 
 # ======================================================
 # VISUALIZATION
@@ -113,7 +113,7 @@ pandas
 matplotlib
 
 # Statistical data visualization library built on matplotlib (~2-5 MB)
-seaborn
+#seaborn
 
 # Interactive plotting library, often used with Shiny apps (~20-25 MB)
 #plotly
@@ -126,20 +126,16 @@ seaborn
 PyQt6; sys_platform != "win32"
 
 # ======================================================
-# KAFKA STREAMING MESSAGE BROKER INTEGRATION
+# STREAMING / API
 # ======================================================
 
 # Kafka Python client (lightweight, ~1 MB)
 # Supports Kafka 3.5+ with KRaft mode (no ZooKeeper required)
 kafka-python-ng
-
-# ======================================================
-# Install Requests for API call
-# ======================================================
 requests
 
 # ======================================================
-# Install the following for Maps
+# GEOSPATIAL / MAPPING
 # ======================================================
 
 cartopy 

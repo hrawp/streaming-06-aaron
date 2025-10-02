@@ -26,9 +26,7 @@ from dotenv import load_dotenv
 from utils.utils_logger import logger
 from utils.utils_consumer import create_kafka_consumer
 import matplotlib
-from matplotlib.patches import Circle
 from shapely.geometry import Polygon
-from cartopy import geodesic
 from haversine import haversine, Unit
 
 # Load .env settings
@@ -47,7 +45,7 @@ def get_kafka_consumer_group_id() -> str:
     return os.getenv("BUZZ_CONSUMER_GROUP_ID", "eq_group")
 
 # Rolling window duration (minutes)
-ROLLING_MINUTES = 2000
+ROLLING_MINUTES = 720
 
 # Cluster proximity (km)
 CLUSTER_RADIUS_KM = 250
@@ -230,4 +228,3 @@ def main():
 if __name__ == "__main__":
     main()
     plt.ioff()
-    plt.show()

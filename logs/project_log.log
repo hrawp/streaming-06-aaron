@@ -105,3 +105,97 @@
 2025-10-01 20:17:28 | WARNING | Producer interrupted by user.
 2025-10-01 20:17:28 | INFO | Kafka producer closed.
 2025-10-01 20:17:28 | INFO | Producer shutting down.
+2025-10-01 20:17:33 | INFO | Logging to file: logs/project_log.log
+2025-10-01 20:17:33 | INFO | Log sanitization enabled, personal info removed
+2025-10-01 20:17:33 | INFO | START earthquake producer...
+2025-10-01 20:17:33 | INFO | Kafka producer connected to localhost:9092
+2025-10-01 20:17:34 | INFO | {'id': 'ci41101583', 'place': '14 km S of Borrego Springs, CA', 'mag': 1.26, 'time': '2025-10-02 00:52:38', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ci41101583', 'coordinates': [-116.3866667, 33.1345, 7.68]}
+2025-10-01 20:17:34 | INFO | Sent message to Kafka topic 'project_json': {'id': 'ci41101583', 'place': '14 km S of Borrego Springs, CA', 'mag': 1.26, 'time': '2025-10-02 00:52:38', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ci41101583', 'coordinates': [-116.3866667, 33.1345, 7.68]}
+2025-10-01 20:17:34 | INFO | {'id': 'ci41101575', 'place': '11 km NNW of Ocotillo, CA', 'mag': 0.69, 'time': '2025-10-02 00:36:45', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ci41101575', 'coordinates': [-116.0338333, 32.8298333, 7.86]}
+2025-10-01 20:17:34 | INFO | New quake: {'lon': -116.3866667, 'lat': 33.1345, 'mag': 1.26, 'place': '14 km S of Borrego Springs, CA', 'timestamp': datetime.datetime(2025, 10, 2, 1, 17, 34, 58223)}
+2025-10-01 20:17:34 | INFO | Sent message to Kafka topic 'project_json': {'id': 'ci41101575', 'place': '11 km NNW of Ocotillo, CA', 'mag': 0.69, 'time': '2025-10-02 00:36:45', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ci41101575', 'coordinates': [-116.0338333, 32.8298333, 7.86]}
+2025-10-01 20:17:34 | INFO | {'id': 'nc75243701', 'place': '13 km SSW of Lake Pillsbury, CA', 'mag': 1.58, 'time': '2025-10-02 00:34:24', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/nc75243701', 'coordinates': [-123, 39.2978324890137, 5.76999998092651]}
+2025-10-01 20:17:34 | INFO | Sent message to Kafka topic 'project_json': {'id': 'nc75243701', 'place': '13 km SSW of Lake Pillsbury, CA', 'mag': 1.58, 'time': '2025-10-02 00:34:24', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/nc75243701', 'coordinates': [-123, 39.2978324890137, 5.76999998092651]}
+2025-10-01 20:17:35 | INFO | New quake: {'lon': -116.0338333, 'lat': 32.8298333, 'mag': 0.69, 'place': '11 km NNW of Ocotillo, CA', 'timestamp': datetime.datetime(2025, 10, 2, 1, 17, 35, 693779)}
+2025-10-01 20:17:35 | INFO | New quake: {'lon': -123, 'lat': 39.2978324890137, 'mag': 1.58, 'place': '13 km SSW of Lake Pillsbury, CA', 'timestamp': datetime.datetime(2025, 10, 2, 1, 17, 35, 952411)}
+2025-10-01 20:27:11 | WARNING | Consumer interrupted.
+2025-10-01 20:27:11 | INFO | Consumer closed.
+2025-10-01 20:27:37 | INFO | Logging to file: logs/project_log.log
+2025-10-01 20:27:37 | INFO | Log sanitization enabled, personal info removed
+2025-10-01 20:27:40 | INFO | START earthquake consumer
+2025-10-01 20:27:40 | INFO | Kafka broker address: localhost:9092
+2025-10-01 20:27:40 | INFO | Creating Kafka consumer. Topic='project_json' and group ID='buzz_group'.
+2025-10-01 20:27:40 | INFO | Kafka consumer created successfully.
+2025-10-01 20:27:40 | INFO | Consuming from topic 'project_json' in group 'buzz_group'...
+2025-10-01 20:27:46 | WARNING | Producer interrupted by user.
+2025-10-01 20:27:46 | INFO | Kafka producer closed.
+2025-10-01 20:27:46 | INFO | Producer shutting down.
+2025-10-01 20:27:51 | INFO | Logging to file: logs/project_log.log
+2025-10-01 20:27:51 | INFO | Log sanitization enabled, personal info removed
+2025-10-01 20:27:51 | INFO | START earthquake producer...
+2025-10-01 20:27:52 | INFO | Kafka producer connected to localhost:9092
+2025-10-01 20:27:52 | INFO | {'id': 'ci41101583', 'place': '14 km S of Borrego Springs, CA', 'mag': 1.26, 'time': '2025-10-02 00:52:38', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ci41101583', 'coordinates': [-116.3866667, 33.1345, 7.68]}
+2025-10-01 20:27:52 | INFO | Sent message to Kafka topic 'project_json': {'id': 'ci41101583', 'place': '14 km S of Borrego Springs, CA', 'mag': 1.26, 'time': '2025-10-02 00:52:38', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ci41101583', 'coordinates': [-116.3866667, 33.1345, 7.68]}
+2025-10-01 20:27:52 | INFO | {'id': 'ci41101575', 'place': '11 km NNW of Ocotillo, CA', 'mag': 0.69, 'time': '2025-10-02 00:36:45', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ci41101575', 'coordinates': [-116.0338333, 32.8298333, 7.86]}
+2025-10-01 20:27:52 | INFO | Sent message to Kafka topic 'project_json': {'id': 'ci41101575', 'place': '11 km NNW of Ocotillo, CA', 'mag': 0.69, 'time': '2025-10-02 00:36:45', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ci41101575', 'coordinates': [-116.0338333, 32.8298333, 7.86]}
+2025-10-01 20:27:52 | INFO | {'id': 'nc75243701', 'place': '13 km SSW of Lake Pillsbury, CA', 'mag': 1.58, 'time': '2025-10-02 00:34:24', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/nc75243701', 'coordinates': [-123, 39.2978324890137, 5.76999998092651]}
+2025-10-01 20:27:52 | INFO | New quake: {'lon': -116.3866667, 'lat': 33.1345, 'mag': 1.26, 'place': '14 km S of Borrego Springs, CA', 'timestamp': datetime.datetime(2025, 10, 2, 1, 27, 52, 188187)}
+2025-10-01 20:27:52 | INFO | Sent message to Kafka topic 'project_json': {'id': 'nc75243701', 'place': '13 km SSW of Lake Pillsbury, CA', 'mag': 1.58, 'time': '2025-10-02 00:34:24', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/nc75243701', 'coordinates': [-123, 39.2978324890137, 5.76999998092651]}
+2025-10-01 20:27:53 | INFO | New quake: {'lon': -116.0338333, 'lat': 32.8298333, 'mag': 0.69, 'place': '11 km NNW of Ocotillo, CA', 'timestamp': datetime.datetime(2025, 10, 2, 1, 27, 53, 815773)}
+2025-10-01 20:27:54 | INFO | New quake: {'lon': -123, 'lat': 39.2978324890137, 'mag': 1.58, 'place': '13 km SSW of Lake Pillsbury, CA', 'timestamp': datetime.datetime(2025, 10, 2, 1, 27, 54, 61347)}
+2025-10-01 20:29:14 | INFO | {'id': 'nc75243716', 'place': '3 km WSW of San Francisco Zoo, CA', 'mag': 1.38, 'time': '2025-10-02 01:27:05', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/nc75243716', 'coordinates': [-122.532836914062, 37.7265014648438, 12.0500001907349]}
+2025-10-01 20:29:14 | INFO | Sent message to Kafka topic 'project_json': {'id': 'nc75243716', 'place': '3 km WSW of San Francisco Zoo, CA', 'mag': 1.38, 'time': '2025-10-02 01:27:05', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/nc75243716', 'coordinates': [-122.532836914062, 37.7265014648438, 12.0500001907349]}
+2025-10-01 20:29:14 | INFO | New quake: {'lon': -122.532836914062, 'lat': 37.7265014648438, 'mag': 1.38, 'place': '3 km WSW of San Francisco Zoo, CA', 'timestamp': datetime.datetime(2025, 10, 2, 1, 29, 14, 995571)}
+2025-10-01 20:32:09 | WARNING | Consumer interrupted.
+2025-10-01 20:32:09 | INFO | Consumer closed.
+2025-10-01 20:35:37 | INFO | Logging to file: logs/project_log.log
+2025-10-01 20:35:37 | INFO | Log sanitization enabled, personal info removed
+2025-10-01 20:35:39 | INFO | START earthquake consumer
+2025-10-01 20:35:39 | INFO | Kafka broker address: localhost:9092
+2025-10-01 20:35:39 | INFO | Creating Kafka consumer. Topic='project_json' and group ID='buzz_group'.
+2025-10-01 20:35:39 | INFO | Kafka consumer created successfully.
+2025-10-01 20:35:39 | INFO | Consuming from topic 'project_json' in group 'buzz_group'...
+2025-10-01 20:35:42 | WARNING | Producer interrupted by user.
+2025-10-01 20:35:42 | INFO | Kafka producer closed.
+2025-10-01 20:35:42 | INFO | Producer shutting down.
+2025-10-01 20:35:47 | INFO | Logging to file: logs/project_log.log
+2025-10-01 20:35:47 | INFO | Log sanitization enabled, personal info removed
+2025-10-01 20:35:47 | INFO | START earthquake producer...
+2025-10-01 20:35:47 | INFO | Kafka producer connected to localhost:9092
+2025-10-01 20:35:48 | INFO | {'id': 'nc75243716', 'place': '3 km WSW of San Francisco Zoo, CA', 'mag': 1.38, 'time': '2025-10-02 01:27:05', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/nc75243716', 'coordinates': [-122.532836914062, 37.7265014648438, 12.0500001907349]}
+2025-10-01 20:35:48 | INFO | Sent message to Kafka topic 'project_json': {'id': 'nc75243716', 'place': '3 km WSW of San Francisco Zoo, CA', 'mag': 1.38, 'time': '2025-10-02 01:27:05', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/nc75243716', 'coordinates': [-122.532836914062, 37.7265014648438, 12.0500001907349]}
+2025-10-01 20:35:48 | INFO | {'id': 'ci41101583', 'place': '14 km S of Borrego Springs, CA', 'mag': 1.26, 'time': '2025-10-02 00:52:38', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ci41101583', 'coordinates': [-116.3866667, 33.1345, 7.68]}
+2025-10-01 20:35:48 | INFO | Sent message to Kafka topic 'project_json': {'id': 'ci41101583', 'place': '14 km S of Borrego Springs, CA', 'mag': 1.26, 'time': '2025-10-02 00:52:38', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ci41101583', 'coordinates': [-116.3866667, 33.1345, 7.68]}
+2025-10-01 20:35:48 | INFO | {'id': 'ci41101575', 'place': '11 km NNW of Ocotillo, CA', 'mag': 0.69, 'time': '2025-10-02 00:36:45', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ci41101575', 'coordinates': [-116.0338333, 32.8298333, 7.86]}
+2025-10-01 20:35:48 | INFO | New quake: {'lon': -122.532836914062, 'lat': 37.7265014648438, 'mag': 1.38, 'place': '3 km WSW of San Francisco Zoo, CA', 'timestamp': datetime.datetime(2025, 10, 2, 1, 35, 48, 86758)}
+2025-10-01 20:35:48 | INFO | Sent message to Kafka topic 'project_json': {'id': 'ci41101575', 'place': '11 km NNW of Ocotillo, CA', 'mag': 0.69, 'time': '2025-10-02 00:36:45', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ci41101575', 'coordinates': [-116.0338333, 32.8298333, 7.86]}
+2025-10-01 20:35:49 | INFO | New quake: {'lon': -116.3866667, 'lat': 33.1345, 'mag': 1.26, 'place': '14 km S of Borrego Springs, CA', 'timestamp': datetime.datetime(2025, 10, 2, 1, 35, 49, 723661)}
+2025-10-01 20:35:50 | INFO | New quake: {'lon': -116.0338333, 'lat': 32.8298333, 'mag': 0.69, 'place': '11 km NNW of Ocotillo, CA', 'timestamp': datetime.datetime(2025, 10, 2, 1, 35, 50, 124910)}
+2025-10-01 20:44:44 | WARNING | Consumer interrupted.
+2025-10-01 20:44:44 | INFO | Consumer closed.
+2025-10-01 20:45:01 | WARNING | Producer interrupted by user.
+2025-10-01 20:45:01 | INFO | Kafka producer closed.
+2025-10-01 20:45:01 | INFO | Producer shutting down.
+2025-10-01 20:45:03 | INFO | Logging to file: logs/project_log.log
+2025-10-01 20:45:03 | INFO | Log sanitization enabled, personal info removed
+2025-10-01 20:45:06 | INFO | START earthquake consumer
+2025-10-01 20:45:06 | INFO | Kafka broker address: localhost:9092
+2025-10-01 20:45:06 | INFO | Creating Kafka consumer. Topic='project_json' and group ID='buzz_group'.
+2025-10-01 20:45:06 | INFO | Kafka consumer created successfully.
+2025-10-01 20:45:06 | INFO | Consuming from topic 'project_json' in group 'buzz_group'...
+2025-10-01 20:45:23 | INFO | Logging to file: logs/project_log.log
+2025-10-01 20:45:23 | INFO | Log sanitization enabled, personal info removed
+2025-10-01 20:45:23 | INFO | START earthquake producer...
+2025-10-01 20:45:23 | INFO | Kafka producer connected to localhost:9092
+2025-10-01 20:45:23 | INFO | {'id': 'nc75243716', 'place': '3 km WSW of San Francisco Zoo, CA', 'mag': 1.38, 'time': '2025-10-02 01:27:05', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/nc75243716', 'coordinates': [-122.532836914062, 37.7265014648438, 12.0500001907349]}
+2025-10-01 20:45:23 | INFO | Sent message to Kafka topic 'project_json': {'id': 'nc75243716', 'place': '3 km WSW of San Francisco Zoo, CA', 'mag': 1.38, 'time': '2025-10-02 01:27:05', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/nc75243716', 'coordinates': [-122.532836914062, 37.7265014648438, 12.0500001907349]}
+2025-10-01 20:45:23 | INFO | {'id': 'ci41101583', 'place': '14 km S of Borrego Springs, CA', 'mag': 1.26, 'time': '2025-10-02 00:52:38', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ci41101583', 'coordinates': [-116.3866667, 33.1345, 7.68]}
+2025-10-01 20:45:23 | INFO | New quake: {'lon': -122.532836914062, 'lat': 37.7265014648438, 'mag': 1.38, 'place': '3 km WSW of San Francisco Zoo, CA', 'timestamp': datetime.datetime(2025, 10, 2, 1, 45, 23, 677058)}
+2025-10-01 20:45:23 | INFO | Sent message to Kafka topic 'project_json': {'id': 'ci41101583', 'place': '14 km S of Borrego Springs, CA', 'mag': 1.26, 'time': '2025-10-02 00:52:38', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ci41101583', 'coordinates': [-116.3866667, 33.1345, 7.68]}
+2025-10-01 20:45:25 | INFO | New quake: {'lon': -116.3866667, 'lat': 33.1345, 'mag': 1.26, 'place': '14 km S of Borrego Springs, CA', 'timestamp': datetime.datetime(2025, 10, 2, 1, 45, 25, 29082)}
+2025-10-01 20:47:12 | INFO | {'id': 'nc75243721', 'place': '5 km WNW of The Geysers, CA', 'mag': 1.11, 'time': '2025-10-02 01:45:15', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/nc75243721', 'coordinates': [-122.807167053223, 38.791332244873, 3.25999999046326]}
+2025-10-01 20:47:12 | INFO | Sent message to Kafka topic 'project_json': {'id': 'nc75243721', 'place': '5 km WNW of The Geysers, CA', 'mag': 1.11, 'time': '2025-10-02 01:45:15', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/nc75243721', 'coordinates': [-122.807167053223, 38.791332244873, 3.25999999046326]}
+2025-10-01 20:47:12 | INFO | New quake: {'lon': -122.807167053223, 'lat': 38.791332244873, 'mag': 1.11, 'place': '5 km WNW of The Geysers, CA', 'timestamp': datetime.datetime(2025, 10, 2, 1, 47, 12, 683492)}
+2025-10-01 20:50:14 | INFO | {'id': 'ak025cmto14y', 'place': '70 km WNW of Ninilchik, Alaska', 'mag': 1.4, 'time': '2025-10-02 01:47:39', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ak025cmto14y', 'coordinates': [-152.9069, 60.1951, 121.4]}
+2025-10-01 20:50:14 | INFO | Sent message to Kafka topic 'project_json': {'id': 'ak025cmto14y', 'place': '70 km WNW of Ninilchik, Alaska', 'mag': 1.4, 'time': '2025-10-02 01:47:39', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ak025cmto14y', 'coordinates': [-152.9069, 60.1951, 121.4]}
+2025-10-01 20:50:14 | INFO | New quake: {'lon': -152.9069, 'lat': 60.1951, 'mag': 1.4, 'place': '70 km WNW of Ninilchik, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 1, 50, 14, 13426)}
