@@ -16,6 +16,7 @@ import json
 import numpy as np
 import matplotlib.pyplot as plt
 import cartopy.crs as ccrs
+from cartopy import geodesic
 import cartopy.feature as cfeature
 from matplotlib.patches import Circle
 from sklearn.cluster import DBSCAN
@@ -25,6 +26,10 @@ from dotenv import load_dotenv
 from utils.utils_logger import logger
 from utils.utils_consumer import create_kafka_consumer
 import matplotlib
+from matplotlib.patches import Circle
+from shapely.geometry import Polygon
+from cartopy import geodesic
+from haversine import haversine, Unit
 
 # Load .env settings
 load_dotenv()
@@ -42,10 +47,10 @@ def get_kafka_consumer_group_id() -> str:
     return os.getenv("BUZZ_CONSUMER_GROUP_ID", "eq_group")
 
 # Rolling window duration (minutes)
-ROLLING_MINUTES = 240
+ROLLING_MINUTES = 2000
 
 # Cluster proximity (km)
-CLUSTER_RADIUS_KM = 1000
+CLUSTER_RADIUS_KM = 250
 
 # --- Initialize figure with main map + Alaska inset ---
 fig = plt.figure(figsize=(12, 8))
@@ -80,44 +85,65 @@ def plot_quakes_on_axis(ax, quakes, cluster_radius_km=100):
     if not quakes:
         return
 
+    # --- DBSCAN clustering on haversine distance ---
     coords = np.array([[q["lat"], q["lon"]] for q in quakes])
     kms_per_radian = 6371.0088
     epsilon = cluster_radius_km / kms_per_radian
     coords_rad = np.radians(coords)
 
-    db = DBSCAN(eps=epsilon, min_samples=3, algorithm='ball_tree', metric='haversine')
+    db = DBSCAN(eps=epsilon, min_samples=2, algorithm='ball_tree', metric='haversine')
     labels = db.fit_predict(coords_rad)
 
     unique_labels = sorted(set(labels) - {-1})
     cmap = matplotlib.colormaps.get_cmap('tab10')
-    cluster_colors = {label: to_hex(cmap(i / max(1, len(unique_labels) - 1)))
-                      for i, label in enumerate(unique_labels)}
+    cluster_colors = {
+        label: to_hex(cmap(i / max(1, len(unique_labels) - 1)))
+        for i, label in enumerate(unique_labels)
+    }
 
-    # Plot quakes
+    # --- Plot each quake ---
     for i, quake in enumerate(quakes):
         lon = quake["lon"]
         lat = quake["lat"]
         mag = quake["mag"]
         label = labels[i]
         color = 'red' if label == -1 else cluster_colors[label]
-        ax.plot(lon, lat, marker='o', color=color, markersize=mag * 2, transform=ccrs.PlateCarree())
+
+        ax.plot(
+            lon, lat,
+            marker='o',
+            color=color,
+            markersize=mag * 2,
+            transform=ccrs.PlateCarree()
+        )
         quake["cluster"] = label
 
-    # Cluster circles
+    # --- Cluster circles (geodesic polygons) ---
     for label in unique_labels:
         members = [q for q in quakes if q["cluster"] == label]
-        if len(members) >= 3:
+        if len(members) >= 2:
             avg_lat = np.mean([q["lat"] for q in members])
             avg_lon = np.mean([q["lon"] for q in members])
-            circle = Circle(
-                (avg_lon, avg_lat),
-                radius=cluster_radius_km * 1000,
+
+            # Compute max radius needed to cover all points in cluster
+            max_dist_km = max(
+                haversine((avg_lat, avg_lon), (q["lat"], q["lon"]), unit=Unit.KILOMETERS)
+                for q in members
+            )
+            max_dist_km *= 1.2  # add some buffer
+
+            # Create geodesic circle polygon
+            g = geodesic.Geodesic()
+            circle_coords = g.circle(lon=avg_lon, lat=avg_lat, radius=max_dist_km * 1000)
+            circle_geom = Polygon(circle_coords)  # ✅ shapely geometry
+
+            ax.add_geometries(
+                [circle_geom],
+                crs=ccrs.PlateCarree(),
                 facecolor=cluster_colors[label],
                 edgecolor=cluster_colors[label],
-                alpha=0.2,
-                transform=ccrs.PlateCarree()
+                alpha=0.3
             )
-            ax.add_patch(circle)
 
 def plot_earthquakes_with_clusters(quakes, cluster_radius_km=100, minutes_back=30):
     time_cutoff = datetime.utcnow() - timedelta(minutes=minutes_back)

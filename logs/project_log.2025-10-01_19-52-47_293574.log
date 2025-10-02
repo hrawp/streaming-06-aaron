@@ -1,0 +1,23 @@
+2025-10-01 19:52:47 | INFO | New quake: {'lon': -145.4901, 'lat': 63.351, 'mag': 2.2, 'place': '29 km NNE of Paxson, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 0, 52, 47, 24913)}
+2025-10-01 19:52:47 | INFO | New quake: {'lon': -117.0405, 'lat': 34.0041667, 'mag': 1.35, 'place': '2 km NNE of Calimesa, CA', 'timestamp': datetime.datetime(2025, 10, 2, 0, 52, 47, 306405)}
+2025-10-01 19:52:47 | INFO | New quake: {'lon': -122.43399810791, 'lat': 37.5125007629395, 'mag': 1.66, 'place': '3 km ENE of El Granada, CA', 'timestamp': datetime.datetime(2025, 10, 2, 0, 52, 47, 410872)}
+2025-10-01 19:52:47 | INFO | New quake: {'lon': -118.5288333, 'lat': 34.2826667, 'mag': 1.39, 'place': '3 km WNW of Granada Hills, CA', 'timestamp': datetime.datetime(2025, 10, 2, 0, 52, 47, 521873)}
+2025-10-01 19:52:59 | WARNING | Consumer interrupted.
+2025-10-01 19:52:59 | INFO | Consumer closed.
+2025-10-01 19:53:35 | INFO | Logging to file: logs/project_log.log
+2025-10-01 19:53:35 | INFO | Log sanitization enabled, personal info removed
+2025-10-01 19:53:37 | INFO | START earthquake consumer
+2025-10-01 19:53:37 | INFO | Kafka broker address: localhost:9092
+2025-10-01 19:53:37 | INFO | Creating Kafka consumer. Topic='project_json' and group ID='buzz_group'.
+2025-10-01 19:53:37 | INFO | Kafka consumer created successfully.
+2025-10-01 19:53:37 | INFO | Consuming from topic 'project_json' in group 'buzz_group'...
+2025-10-01 19:53:45 | INFO | New quake: {'lon': -116.0338333, 'lat': 32.8298333, 'mag': 0.69, 'place': '11 km NNW of Ocotillo, CA', 'timestamp': datetime.datetime(2025, 10, 2, 0, 53, 45, 157674)}
+2025-10-01 19:53:46 | INFO | New quake: {'lon': -123, 'lat': 39.2978324890137, 'mag': 1.58, 'place': '13 km SSW of Lake Pillsbury, CA', 'timestamp': datetime.datetime(2025, 10, 2, 0, 53, 46, 570071)}
+2025-10-01 19:53:46 | INFO | New quake: {'lon': -122.840667724609, 'lat': 38.8240013122559, 'mag': 0.98, 'place': '9 km NW of The Geysers, CA', 'timestamp': datetime.datetime(2025, 10, 2, 0, 53, 46, 954026)}
+2025-10-01 19:53:47 | INFO | New quake: {'lon': -145.4901, 'lat': 63.351, 'mag': 2.2, 'place': '29 km NNE of Paxson, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 0, 53, 47, 198995)}
+2025-10-01 19:53:47 | INFO | New quake: {'lon': -117.0405, 'lat': 34.0041667, 'mag': 1.35, 'place': '2 km NNE of Calimesa, CA', 'timestamp': datetime.datetime(2025, 10, 2, 0, 53, 47, 315972)}
+2025-10-01 19:53:47 | INFO | New quake: {'lon': -122.43399810791, 'lat': 37.5125007629395, 'mag': 1.66, 'place': '3 km ENE of El Granada, CA', 'timestamp': datetime.datetime(2025, 10, 2, 0, 53, 47, 415858)}
+2025-10-01 19:53:47 | INFO | New quake: {'lon': -118.5288333, 'lat': 34.2826667, 'mag': 1.39, 'place': '3 km WNW of Granada Hills, CA', 'timestamp': datetime.datetime(2025, 10, 2, 0, 53, 47, 527024)}
+2025-10-01 19:55:13 | INFO | New quake: {'lon': -116.3861694, 'lat': 33.1349983, 'mag': 1.24, 'place': '14 km S of Borrego Springs, CA', 'timestamp': datetime.datetime(2025, 10, 2, 0, 55, 13, 191374)}
+2025-10-01 20:06:59 | WARNING | Consumer interrupted.
+2025-10-01 20:06:59 | INFO | Consumer closed.

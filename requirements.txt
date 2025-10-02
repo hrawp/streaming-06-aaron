@@ -137,3 +137,12 @@ kafka-python-ng
 # Install Requests for API call
 # ======================================================
 requests
+
+# ======================================================
+# Install the following for Maps
+# ======================================================
+
+cartopy 
+scikit-learn
+haversine
+shapely

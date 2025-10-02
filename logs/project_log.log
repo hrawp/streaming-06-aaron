@@ -1,31 +1,107 @@
-2025-10-01 19:11:26 | INFO | New quake: {'lon': -117.0405, 'lat': 34.0041667, 'mag': 1.35, 'place': '2 km NNE of Calimesa, CA', 'timestamp': datetime.datetime(2025, 10, 2, 0, 11, 26, 578136)}
-2025-10-01 19:11:26 | INFO | New quake: {'lon': -122.43399810791, 'lat': 37.5125007629395, 'mag': 1.66, 'place': '3 km ENE of El Granada, CA', 'timestamp': datetime.datetime(2025, 10, 2, 0, 11, 26, 759760)}
-2025-10-01 19:11:26 | INFO | New quake: {'lon': -118.5288333, 'lat': 34.2826667, 'mag': 1.39, 'place': '3 km WNW of Granada Hills, CA', 'timestamp': datetime.datetime(2025, 10, 2, 0, 11, 26, 926471)}
-2025-10-01 19:11:27 | INFO | New quake: {'lon': -142.8987, 'lat': 60.4578, 'mag': 0.8, 'place': '108 km S of McCarthy, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 0, 11, 27, 65039)}
-2025-10-01 19:11:27 | INFO | New quake: {'lon': -148.7602, 'lat': 63.0041, 'mag': 2.4, 'place': '44 km SSE of Cantwell, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 0, 11, 27, 225314)}
-2025-10-01 19:15:56 | WARNING | Consumer interrupted.
-2025-10-01 19:15:56 | INFO | Consumer closed.
-2025-10-01 19:16:26 | INFO | Logging to file: logs/project_log.log
-2025-10-01 19:16:26 | INFO | Log sanitization enabled, personal info removed
-2025-10-01 19:16:28 | INFO | START earthquake consumer
-2025-10-01 19:16:28 | INFO | Kafka broker address: localhost:9092
-2025-10-01 19:16:28 | INFO | Creating Kafka consumer. Topic='project_json' and group ID='buzz_group'.
-2025-10-01 19:16:28 | INFO | Kafka consumer created successfully.
-2025-10-01 19:16:28 | INFO | Consuming from topic 'project_json' in group 'buzz_group'...
-2025-10-01 19:16:49 | INFO | Logging to file: logs/project_log.log
-2025-10-01 19:16:49 | INFO | Log sanitization enabled, personal info removed
-2025-10-01 19:16:49 | INFO | START earthquake producer...
-2025-10-01 19:16:49 | INFO | Kafka producer connected to localhost:9092
-2025-10-01 19:16:49 | INFO | {'id': 'nc75243691', 'place': '9 km NW of The Geysers, CA', 'mag': 0.98, 'time': '2025-10-02 00:04:50', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/nc75243691', 'coordinates': [-122.840667724609, 38.8240013122559, 1.04999995231628]}
-2025-10-01 19:16:49 | INFO | Sent message to Kafka topic 'project_json': {'id': 'nc75243691', 'place': '9 km NW of The Geysers, CA', 'mag': 0.98, 'time': '2025-10-02 00:04:50', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/nc75243691', 'coordinates': [-122.840667724609, 38.8240013122559, 1.04999995231628]}
-2025-10-01 19:16:49 | INFO | {'id': 'ak025cmst4gf', 'place': '29 km NNE of Paxson, Alaska', 'mag': 2.2, 'time': '2025-10-02 00:03:19', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ak025cmst4gf', 'coordinates': [-145.4901, 63.351, 0]}
-2025-10-01 19:16:49 | INFO | New quake: {'lon': -122.840667724609, 'lat': 38.8240013122559, 'mag': 0.98, 'place': '9 km NW of The Geysers, CA', 'timestamp': datetime.datetime(2025, 10, 2, 0, 16, 49, 737074)}
-2025-10-01 19:16:49 | INFO | Sent message to Kafka topic 'project_json': {'id': 'ak025cmst4gf', 'place': '29 km NNE of Paxson, Alaska', 'mag': 2.2, 'time': '2025-10-02 00:03:19', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ak025cmst4gf', 'coordinates': [-145.4901, 63.351, 0]}
-2025-10-01 19:16:49 | INFO | {'id': 'ci41101567', 'place': '2 km NNE of Calimesa, CA', 'mag': 1.35, 'time': '2025-10-02 00:02:59', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ci41101567', 'coordinates': [-117.0405, 34.0041667, 12.52]}
-2025-10-01 19:16:49 | INFO | Sent message to Kafka topic 'project_json': {'id': 'ci41101567', 'place': '2 km NNE of Calimesa, CA', 'mag': 1.35, 'time': '2025-10-02 00:02:59', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ci41101567', 'coordinates': [-117.0405, 34.0041667, 12.52]}
-2025-10-01 19:16:49 | INFO | {'id': 'nc75243686', 'place': '3 km ENE of El Granada, CA', 'mag': 1.66, 'time': '2025-10-02 00:00:59', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/nc75243686', 'coordinates': [-122.43399810791, 37.5125007629395, 2.77999997138977]}
-2025-10-01 19:16:49 | INFO | Sent message to Kafka topic 'project_json': {'id': 'nc75243686', 'place': '3 km ENE of El Granada, CA', 'mag': 1.66, 'time': '2025-10-02 00:00:59', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/nc75243686', 'coordinates': [-122.43399810791, 37.5125007629395, 2.77999997138977]}
-2025-10-01 19:16:49 | INFO | {'id': 'ci41101551', 'place': '3 km WNW of Granada Hills, CA', 'mag': 1.39, 'time': '2025-10-01 23:54:34', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ci41101551', 'coordinates': [-118.5288333, 34.2826667, 6.81]}
-2025-10-01 19:16:49 | INFO | Sent message to Kafka topic 'project_json': {'id': 'ci41101551', 'place': '3 km WNW of Granada Hills, CA', 'mag': 1.39, 'time': '2025-10-01 23:54:34', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ci41101551', 'coordinates': [-118.5288333, 34.2826667, 6.81]}
-2025-10-01 19:16:49 | INFO | {'id': 'ak025clj5569', 'place': '108 km S of McCarthy, Alaska', 'mag': 0.8, 'time': '2025-10-01 23:33:04', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ak025clj5569', 'coordinates': [-142.8987, 60.4578, 6.5]}
-2025-10-01 19:16:49 | INFO | Sent message to Kafka topic 'project_json': {'id': 'ak025clj5569', 'place': '108 km S of McCarthy, Alaska', 'mag': 0.8, 'time': '2025-10-01 23:33:04', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ak025clj5569', 'coordinates': [-142.8987, 60.4578, 6.5]}
+2025-10-01 19:53:40 | INFO | Kafka producer closed.
+2025-10-01 19:53:40 | INFO | Producer shutting down.
+2025-10-01 19:53:44 | INFO | Logging to file: logs/project_log.log
+2025-10-01 19:53:44 | INFO | Log sanitization enabled, personal info removed
+2025-10-01 19:53:44 | INFO | START earthquake producer...
+2025-10-01 19:53:44 | INFO | Kafka producer connected to localhost:9092
+2025-10-01 19:53:45 | INFO | {'id': 'ci41101575', 'place': '11 km NNW of Ocotillo, CA', 'mag': 0.69, 'time': '2025-10-02 00:36:45', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ci41101575', 'coordinates': [-116.0338333, 32.8298333, 7.86]}
+2025-10-01 19:53:45 | INFO | Sent message to Kafka topic 'project_json': {'id': 'ci41101575', 'place': '11 km NNW of Ocotillo, CA', 'mag': 0.69, 'time': '2025-10-02 00:36:45', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ci41101575', 'coordinates': [-116.0338333, 32.8298333, 7.86]}
+2025-10-01 19:53:45 | INFO | {'id': 'nc75243701', 'place': '13 km SSW of Lake Pillsbury, CA', 'mag': 1.58, 'time': '2025-10-02 00:34:24', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/nc75243701', 'coordinates': [-123, 39.2978324890137, 5.76999998092651]}
+2025-10-01 19:53:45 | INFO | Sent message to Kafka topic 'project_json': {'id': 'nc75243701', 'place': '13 km SSW of Lake Pillsbury, CA', 'mag': 1.58, 'time': '2025-10-02 00:34:24', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/nc75243701', 'coordinates': [-123, 39.2978324890137, 5.76999998092651]}
+2025-10-01 19:53:45 | INFO | {'id': 'nc75243691', 'place': '9 km NW of The Geysers, CA', 'mag': 0.98, 'time': '2025-10-02 00:04:50', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/nc75243691', 'coordinates': [-122.840667724609, 38.8240013122559, 1.04999995231628]}
+2025-10-01 19:53:45 | INFO | Sent message to Kafka topic 'project_json': {'id': 'nc75243691', 'place': '9 km NW of The Geysers, CA', 'mag': 0.98, 'time': '2025-10-02 00:04:50', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/nc75243691', 'coordinates': [-122.840667724609, 38.8240013122559, 1.04999995231628]}
+2025-10-01 19:53:45 | INFO | {'id': 'ak025cmst4gf', 'place': '29 km NNE of Paxson, Alaska', 'mag': 2.2, 'time': '2025-10-02 00:03:19', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ak025cmst4gf', 'coordinates': [-145.4901, 63.351, 0]}
+2025-10-01 19:53:45 | INFO | Sent message to Kafka topic 'project_json': {'id': 'ak025cmst4gf', 'place': '29 km NNE of Paxson, Alaska', 'mag': 2.2, 'time': '2025-10-02 00:03:19', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ak025cmst4gf', 'coordinates': [-145.4901, 63.351, 0]}
+2025-10-01 19:53:45 | INFO | {'id': 'ci41101567', 'place': '2 km NNE of Calimesa, CA', 'mag': 1.35, 'time': '2025-10-02 00:02:59', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ci41101567', 'coordinates': [-117.0405, 34.0041667, 12.52]}
+2025-10-01 19:53:45 | INFO | Sent message to Kafka topic 'project_json': {'id': 'ci41101567', 'place': '2 km NNE of Calimesa, CA', 'mag': 1.35, 'time': '2025-10-02 00:02:59', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ci41101567', 'coordinates': [-117.0405, 34.0041667, 12.52]}
+2025-10-01 19:53:45 | INFO | {'id': 'nc75243686', 'place': '3 km ENE of El Granada, CA', 'mag': 1.66, 'time': '2025-10-02 00:00:59', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/nc75243686', 'coordinates': [-122.43399810791, 37.5125007629395, 2.77999997138977]}
+2025-10-01 19:53:45 | INFO | Sent message to Kafka topic 'project_json': {'id': 'nc75243686', 'place': '3 km ENE of El Granada, CA', 'mag': 1.66, 'time': '2025-10-02 00:00:59', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/nc75243686', 'coordinates': [-122.43399810791, 37.5125007629395, 2.77999997138977]}
+2025-10-01 19:53:45 | INFO | {'id': 'ci41101551', 'place': '3 km WNW of Granada Hills, CA', 'mag': 1.39, 'time': '2025-10-01 23:54:34', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ci41101551', 'coordinates': [-118.5288333, 34.2826667, 6.81]}
+2025-10-01 19:53:45 | INFO | Sent message to Kafka topic 'project_json': {'id': 'ci41101551', 'place': '3 km WNW of Granada Hills, CA', 'mag': 1.39, 'time': '2025-10-01 23:54:34', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ci41101551', 'coordinates': [-118.5288333, 34.2826667, 6.81]}
+2025-10-01 19:55:13 | INFO | {'id': 'ci41101583', 'place': '14 km S of Borrego Springs, CA', 'mag': 1.24, 'time': '2025-10-02 00:52:38', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ci41101583', 'coordinates': [-116.3861694, 33.1349983, 6.08]}
+2025-10-01 19:55:13 | INFO | Sent message to Kafka topic 'project_json': {'id': 'ci41101583', 'place': '14 km S of Borrego Springs, CA', 'mag': 1.24, 'time': '2025-10-02 00:52:38', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ci41101583', 'coordinates': [-116.3861694, 33.1349983, 6.08]}
+2025-10-01 19:58:08 | WARNING | Producer interrupted by user.
+2025-10-01 19:58:08 | INFO | Kafka producer closed.
+2025-10-01 19:58:08 | INFO | Producer shutting down.
+2025-10-01 20:07:23 | INFO | Logging to file: logs/project_log.log
+2025-10-01 20:07:23 | INFO | Log sanitization enabled, personal info removed
+2025-10-01 20:07:26 | INFO | START earthquake consumer
+2025-10-01 20:07:26 | INFO | Kafka broker address: localhost:9092
+2025-10-01 20:07:26 | INFO | Creating Kafka consumer. Topic='project_json' and group ID='buzz_group'.
+2025-10-01 20:07:26 | INFO | Kafka consumer created successfully.
+2025-10-01 20:07:26 | INFO | Consuming from topic 'project_json' in group 'buzz_group'...
+2025-10-01 20:07:38 | INFO | Logging to file: logs/project_log.log
+2025-10-01 20:07:38 | INFO | Log sanitization enabled, personal info removed
+2025-10-01 20:07:38 | INFO | START earthquake producer...
+2025-10-01 20:07:38 | INFO | Kafka producer connected to localhost:9092
+2025-10-01 20:07:38 | INFO | {'id': 'ci41101583', 'place': '14 km S of Borrego Springs, CA', 'mag': 1.26, 'time': '2025-10-02 00:52:38', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ci41101583', 'coordinates': [-116.3866667, 33.1345, 7.68]}
+2025-10-01 20:07:38 | INFO | Sent message to Kafka topic 'project_json': {'id': 'ci41101583', 'place': '14 km S of Borrego Springs, CA', 'mag': 1.26, 'time': '2025-10-02 00:52:38', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ci41101583', 'coordinates': [-116.3866667, 33.1345, 7.68]}
+2025-10-01 20:07:38 | INFO | {'id': 'ci41101575', 'place': '11 km NNW of Ocotillo, CA', 'mag': 0.69, 'time': '2025-10-02 00:36:45', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ci41101575', 'coordinates': [-116.0338333, 32.8298333, 7.86]}
+2025-10-01 20:07:38 | INFO | Sent message to Kafka topic 'project_json': {'id': 'ci41101575', 'place': '11 km NNW of Ocotillo, CA', 'mag': 0.69, 'time': '2025-10-02 00:36:45', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ci41101575', 'coordinates': [-116.0338333, 32.8298333, 7.86]}
+2025-10-01 20:07:38 | INFO | {'id': 'nc75243701', 'place': '13 km SSW of Lake Pillsbury, CA', 'mag': 1.58, 'time': '2025-10-02 00:34:24', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/nc75243701', 'coordinates': [-123, 39.2978324890137, 5.76999998092651]}
+2025-10-01 20:07:38 | INFO | New quake: {'lon': -116.3866667, 'lat': 33.1345, 'mag': 1.26, 'place': '14 km S of Borrego Springs, CA', 'timestamp': datetime.datetime(2025, 10, 2, 1, 7, 38, 788387)}
+2025-10-01 20:07:38 | INFO | Sent message to Kafka topic 'project_json': {'id': 'nc75243701', 'place': '13 km SSW of Lake Pillsbury, CA', 'mag': 1.58, 'time': '2025-10-02 00:34:24', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/nc75243701', 'coordinates': [-123, 39.2978324890137, 5.76999998092651]}
+2025-10-01 20:07:40 | INFO | New quake: {'lon': -116.0338333, 'lat': 32.8298333, 'mag': 0.69, 'place': '11 km NNW of Ocotillo, CA', 'timestamp': datetime.datetime(2025, 10, 2, 1, 7, 40, 958570)}
+2025-10-01 20:07:41 | INFO | New quake: {'lon': -123, 'lat': 39.2978324890137, 'mag': 1.58, 'place': '13 km SSW of Lake Pillsbury, CA', 'timestamp': datetime.datetime(2025, 10, 2, 1, 7, 41, 199070)}
+2025-10-01 20:09:27 | WARNING | Consumer interrupted.
+2025-10-01 20:09:27 | INFO | Consumer closed.
+2025-10-01 20:09:46 | INFO | Logging to file: logs/project_log.log
+2025-10-01 20:09:46 | INFO | Log sanitization enabled, personal info removed
+2025-10-01 20:09:48 | INFO | START earthquake consumer
+2025-10-01 20:09:48 | INFO | Kafka broker address: localhost:9092
+2025-10-01 20:09:48 | INFO | Creating Kafka consumer. Topic='project_json' and group ID='buzz_group'.
+2025-10-01 20:09:48 | INFO | Kafka consumer created successfully.
+2025-10-01 20:09:48 | INFO | Consuming from topic 'project_json' in group 'buzz_group'...
+2025-10-01 20:09:54 | WARNING | Producer interrupted by user.
+2025-10-01 20:09:54 | INFO | Kafka producer closed.
+2025-10-01 20:09:54 | INFO | Producer shutting down.
+2025-10-01 20:09:58 | INFO | Logging to file: logs/project_log.log
+2025-10-01 20:09:58 | INFO | Log sanitization enabled, personal info removed
+2025-10-01 20:09:58 | INFO | START earthquake producer...
+2025-10-01 20:09:58 | INFO | Kafka producer connected to localhost:9092
+2025-10-01 20:09:59 | INFO | {'id': 'ci41101583', 'place': '14 km S of Borrego Springs, CA', 'mag': 1.26, 'time': '2025-10-02 00:52:38', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ci41101583', 'coordinates': [-116.3866667, 33.1345, 7.68]}
+2025-10-01 20:09:59 | INFO | Sent message to Kafka topic 'project_json': {'id': 'ci41101583', 'place': '14 km S of Borrego Springs, CA', 'mag': 1.26, 'time': '2025-10-02 00:52:38', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ci41101583', 'coordinates': [-116.3866667, 33.1345, 7.68]}
+2025-10-01 20:09:59 | INFO | {'id': 'ci41101575', 'place': '11 km NNW of Ocotillo, CA', 'mag': 0.69, 'time': '2025-10-02 00:36:45', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ci41101575', 'coordinates': [-116.0338333, 32.8298333, 7.86]}
+2025-10-01 20:09:59 | INFO | New quake: {'lon': -116.3866667, 'lat': 33.1345, 'mag': 1.26, 'place': '14 km S of Borrego Springs, CA', 'timestamp': datetime.datetime(2025, 10, 2, 1, 9, 59, 48065)}
+2025-10-01 20:09:59 | INFO | Sent message to Kafka topic 'project_json': {'id': 'ci41101575', 'place': '11 km NNW of Ocotillo, CA', 'mag': 0.69, 'time': '2025-10-02 00:36:45', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ci41101575', 'coordinates': [-116.0338333, 32.8298333, 7.86]}
+2025-10-01 20:09:59 | INFO | {'id': 'nc75243701', 'place': '13 km SSW of Lake Pillsbury, CA', 'mag': 1.58, 'time': '2025-10-02 00:34:24', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/nc75243701', 'coordinates': [-123, 39.2978324890137, 5.76999998092651]}
+2025-10-01 20:09:59 | INFO | Sent message to Kafka topic 'project_json': {'id': 'nc75243701', 'place': '13 km SSW of Lake Pillsbury, CA', 'mag': 1.58, 'time': '2025-10-02 00:34:24', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/nc75243701', 'coordinates': [-123, 39.2978324890137, 5.76999998092651]}
+2025-10-01 20:10:00 | INFO | New quake: {'lon': -116.0338333, 'lat': 32.8298333, 'mag': 0.69, 'place': '11 km NNW of Ocotillo, CA', 'timestamp': datetime.datetime(2025, 10, 2, 1, 10, 0, 489793)}
+2025-10-01 20:10:00 | INFO | New quake: {'lon': -123, 'lat': 39.2978324890137, 'mag': 1.58, 'place': '13 km SSW of Lake Pillsbury, CA', 'timestamp': datetime.datetime(2025, 10, 2, 1, 10, 0, 728763)}
+2025-10-01 20:10:28 | WARNING | Consumer interrupted.
+2025-10-01 20:10:28 | INFO | Consumer closed.
+2025-10-01 20:16:08 | INFO | Logging to file: logs/project_log.log
+2025-10-01 20:16:08 | INFO | Log sanitization enabled, personal info removed
+2025-10-01 20:16:10 | INFO | START earthquake consumer
+2025-10-01 20:16:10 | INFO | Kafka broker address: localhost:9092
+2025-10-01 20:16:10 | INFO | Creating Kafka consumer. Topic='project_json' and group ID='buzz_group'.
+2025-10-01 20:16:11 | INFO | Kafka consumer created successfully.
+2025-10-01 20:16:11 | INFO | Consuming from topic 'project_json' in group 'buzz_group'...
+2025-10-01 20:16:14 | WARNING | Producer interrupted by user.
+2025-10-01 20:16:14 | INFO | Kafka producer closed.
+2025-10-01 20:16:14 | INFO | Producer shutting down.
+2025-10-01 20:16:20 | INFO | Logging to file: logs/project_log.log
+2025-10-01 20:16:20 | INFO | Log sanitization enabled, personal info removed
+2025-10-01 20:16:20 | INFO | START earthquake producer...
+2025-10-01 20:16:20 | INFO | Kafka producer connected to localhost:9092
+2025-10-01 20:16:20 | INFO | {'id': 'ci41101583', 'place': '14 km S of Borrego Springs, CA', 'mag': 1.26, 'time': '2025-10-02 00:52:38', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ci41101583', 'coordinates': [-116.3866667, 33.1345, 7.68]}
+2025-10-01 20:16:20 | INFO | Sent message to Kafka topic 'project_json': {'id': 'ci41101583', 'place': '14 km S of Borrego Springs, CA', 'mag': 1.26, 'time': '2025-10-02 00:52:38', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ci41101583', 'coordinates': [-116.3866667, 33.1345, 7.68]}
+2025-10-01 20:16:20 | INFO | {'id': 'ci41101575', 'place': '11 km NNW of Ocotillo, CA', 'mag': 0.69, 'time': '2025-10-02 00:36:45', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ci41101575', 'coordinates': [-116.0338333, 32.8298333, 7.86]}
+2025-10-01 20:16:20 | INFO | New quake: {'lon': -116.3866667, 'lat': 33.1345, 'mag': 1.26, 'place': '14 km S of Borrego Springs, CA', 'timestamp': datetime.datetime(2025, 10, 2, 1, 16, 20, 382443)}
+2025-10-01 20:16:20 | INFO | Sent message to Kafka topic 'project_json': {'id': 'ci41101575', 'place': '11 km NNW of Ocotillo, CA', 'mag': 0.69, 'time': '2025-10-02 00:36:45', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/ci41101575', 'coordinates': [-116.0338333, 32.8298333, 7.86]}
+2025-10-01 20:16:20 | INFO | {'id': 'nc75243701', 'place': '13 km SSW of Lake Pillsbury, CA', 'mag': 1.58, 'time': '2025-10-02 00:34:24', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/nc75243701', 'coordinates': [-123, 39.2978324890137, 5.76999998092651]}
+2025-10-01 20:16:20 | INFO | Sent message to Kafka topic 'project_json': {'id': 'nc75243701', 'place': '13 km SSW of Lake Pillsbury, CA', 'mag': 1.58, 'time': '2025-10-02 00:34:24', 'url': 'https://earthquake.usgs.gov/earthquakes/eventpage/nc75243701', 'coordinates': [-123, 39.2978324890137, 5.76999998092651]}
+2025-10-01 20:16:21 | INFO | New quake: {'lon': -116.0338333, 'lat': 32.8298333, 'mag': 0.69, 'place': '11 km NNW of Ocotillo, CA', 'timestamp': datetime.datetime(2025, 10, 2, 1, 16, 21, 964922)}
+2025-10-01 20:16:22 | INFO | New quake: {'lon': -123, 'lat': 39.2978324890137, 'mag': 1.58, 'place': '13 km SSW of Lake Pillsbury, CA', 'timestamp': datetime.datetime(2025, 10, 2, 1, 16, 22, 240661)}
+2025-10-01 20:16:35 | WARNING | Consumer interrupted.
+2025-10-01 20:16:35 | INFO | Consumer closed.
+2025-10-01 20:17:25 | INFO | Logging to file: logs/project_log.log
+2025-10-01 20:17:25 | INFO | Log sanitization enabled, personal info removed
+2025-10-01 20:17:28 | INFO | START earthquake consumer
+2025-10-01 20:17:28 | INFO | Kafka broker address: localhost:9092
+2025-10-01 20:17:28 | INFO | Creating Kafka consumer. Topic='project_json' and group ID='buzz_group'.
+2025-10-01 20:17:28 | INFO | Kafka consumer created successfully.
+2025-10-01 20:17:28 | INFO | Consuming from topic 'project_json' in group 'buzz_group'...
+2025-10-01 20:17:28 | WARNING | Producer interrupted by user.
+2025-10-01 20:17:28 | INFO | Kafka producer closed.
+2025-10-01 20:17:28 | INFO | Producer shutting down.
