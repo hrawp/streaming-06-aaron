@@ -1,13 +1,20 @@
 # streaming-06-aaron
 
 # Earthquake Streaming Visualization
+
 ## Overview
 
-This project provides a real-time visualization of earthquakes as they occur, with clustering logic to highlight events that happen close together within a configurable distance and time window.
+The big idea is to have a visualization of when earthquakes occur in real time, close together, and within a specified distance and time window.
 
-Live earthquake data is streamed from the USGS feed via an API call into a Kafka producer. The producer publishes events to a Kafka topic, which is consumed by a Kafka consumer. The consumer processes incoming earthquake data and plots the results on a live map.
+This class project takes live data from the USGS feed via an API call in a Kafka producer. That producer updates a topic, which is then read by the consumer. The consumer takes the data and posts it to a live map. A key feature of the map is placing a semi-transparent circle around earthquakes that occur within a given distance of each other.
 
-A key feature of the visualization is the ability to draw semi-transparent circles around groups of earthquakes that occur within a given proximity. This helps reveal patterns in seismic activity and makes clusters of related events easier to identify.
+## Considerations:
+
+Live USGS data mostly comes from the western United States and Alaska. Other countries do report, but generally only higher-magnitude quakes. Since the focus of this class is streaming live data, I used this geographic region to increase the number of data points in a given timeframe.
+
+I set the circle feature to trigger for just two or more quakes near each other. I originally wanted three or more, but adjusted it to ensure the code executed correctly. This demonstrates the ability to group and the potential to notify. I did not set up notifications for these rules, but that could be done.
+
+The map removes data points after a specified time period. This, along with the distance between earthquakes, is configurable. For example, you could set it to 20 minutes and 100 miles apart, and have that shown on the map as well as trigger a notification. This would be quite rare, however. I opened up the time and distance thresholds to both achieve a live data stream and exercise the clustering feature.
 
 ## Key Features
 
@@ -39,9 +46,17 @@ Shapely & Haversine – geometry & distance calculations
 
 dotenv – environment variable management 
 
+## The Visualization in Action.
 
+![Earthquake Map 4:25 to 5:55](images/4_25to5_55_data.JPG)
 
-## Copy This Project
+![Earthquake Map 5:03 to 6:33](images/5_03to6_33_data.JPG)
+
+![Earthquake Map 5:31 to 7:01](images/5_31to7_01_data.JPG)
+
+## Steps to recrated this projec
+
+## 1. Copy This Project
 
 1. Copy/fork this project into your GitHub account
 2. Name it whatever you want.
@@ -49,7 +64,7 @@ dotenv – environment variable management
 
 ---
 
-## If Windows, Start WSL
+## 2. If Windows, Start WSL, Install components for GEOSPATIAL / MAPPING
 
 Launch WSL. Open a PowerShell terminal in VS Code. Run the following command:
 
@@ -71,7 +86,7 @@ Do **all** steps related to starting Kafka in this WSL window.
 
 ---
 
-## Start Kafka (using WSL if Windows)
+## 3. Start Kafka (using WSL if Windows)
 
 In P2, you downloaded, installed, configured a local Kafka service.
 Before starting, run a short prep script to ensure Kafka has a persistent data directory and meta.properties set up. This step works on WSL, macOS, and Linux - be sure you have the $ prompt and you are in the root project folder.
@@ -96,7 +111,7 @@ For detailed instructions, see [SETUP_KAFKA](https://github.com/denisecase/buzzl
 
 ---
 
-## Manage Local Project Virtual Environment
+## 4. Manage Local Project Virtual Environment
 
 Open your project in VS Code and use the commands for your operating system to:
 
@@ -132,7 +147,7 @@ python3 -m pip install --upgrade -r requirements.txt
 
 ---
 
-## Run Streaming Application
+## 5. Run Streaming Application
 
 This will take two terminals:
 
@@ -182,7 +197,7 @@ python3 -m consumers.earthquake_consumer_aaron.py
 ```
 
 
-## Save Space
+## Optional: Save Space
 
 To save disk space, you can delete the .venv folder when not actively working on this project.
 You can always recreate it, activate it, and reinstall the necessary packages later.

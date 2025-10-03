@@ -45,10 +45,10 @@ def get_kafka_consumer_group_id() -> str:
     return os.getenv("BUZZ_CONSUMER_GROUP_ID", "eq_group")
 
 # Rolling window duration (minutes)
-ROLLING_MINUTES = 720
+ROLLING_MINUTES = 90
 
 # Cluster proximity (km)
-CLUSTER_RADIUS_KM = 250
+CLUSTER_RADIUS_KM = 200
 
 # --- Initialize figure with main map + Alaska inset ---
 fig = plt.figure(figsize=(12, 8))

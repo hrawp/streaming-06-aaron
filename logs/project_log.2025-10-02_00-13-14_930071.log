@@ -1,0 +1,183 @@
+2025-10-02 00:13:14 | INFO | New quake: {'lon': -115.6050034, 'lat': 32.7565002, 'mag': 1.14, 'place': '6 km SW of El Centro, CA', 'timestamp': datetime.datetime(2025, 10, 2, 5, 13, 14, 667537)}
+2025-10-02 00:19:11 | INFO | New quake: {'lon': -155.3966, 'lat': 57.6516, 'mag': 1.8, 'place': '57 km W of Karluk, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 5, 19, 11, 385347)}
+2025-10-02 00:25:12 | INFO | New quake: {'lon': -122.824333190918, 'lat': 38.8426666259766, 'mag': 1.83, 'place': '9 km WNW of Cobb, CA', 'timestamp': datetime.datetime(2025, 10, 2, 5, 25, 12, 982115)}
+2025-10-02 00:29:10 | INFO | New quake: {'lon': -121.130332946777, 'lat': 36.5685005187988, 'mag': 1.08, 'place': '4 km NNE of Pinnacles, CA', 'timestamp': datetime.datetime(2025, 10, 2, 5, 29, 10, 819857)}
+2025-10-02 00:38:13 | INFO | New quake: {'lon': -117.6330032, 'lat': 33.8105011, 'mag': 1.4, 'place': '9 km SW of Corona, CA', 'timestamp': datetime.datetime(2025, 10, 2, 5, 38, 13, 961867)}
+2025-10-02 00:40:12 | INFO | New quake: {'lon': -117.6331667, 'lat': 33.8078333, 'mag': 1.51, 'place': '9 km SW of Corona, CA', 'timestamp': datetime.datetime(2025, 10, 2, 5, 40, 12, 784714)}
+2025-10-02 01:00:11 | INFO | New quake: {'lon': -147.6103, 'lat': 64.9324, 'mag': 1, 'place': '2 km S of Fox, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 6, 0, 11, 622749)}
+2025-10-02 01:00:11 | INFO | New quake: {'lon': -148.0683, 'lat': 62.1464, 'mag': 1.9, 'place': '43 km NNW of Glacier View, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 6, 0, 11, 874392)}
+2025-10-02 01:25:10 | INFO | New quake: {'lon': -152.7604, 'lat': 60.074, 'mag': 2.3, 'place': '59 km WNW of Happy Valley, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 6, 25, 10, 78027)}
+2025-10-02 01:34:12 | INFO | New quake: {'lon': -123.342666625977, 'lat': 40.9601669311523, 'mag': 2.77, 'place': '24 km E of Willow Creek, CA', 'timestamp': datetime.datetime(2025, 10, 2, 6, 34, 12, 296057)}
+2025-10-02 01:35:06 | INFO | New quake: {'lon': -123.342666625977, 'lat': 40.9601669311523, 'mag': 2.77, 'place': '24 km E of Willow Creek, CA', 'timestamp': datetime.datetime(2025, 10, 2, 6, 35, 6, 876383)}
+2025-10-02 01:53:14 | INFO | New quake: {'lon': -116.9848328, 'lat': 34.2859993, 'mag': 1.07, 'place': '8 km NW of Big Bear Lake, CA', 'timestamp': datetime.datetime(2025, 10, 2, 6, 53, 14, 689225)}
+2025-10-02 01:55:13 | INFO | New quake: {'lon': -150.5551, 'lat': 62.9155, 'mag': 1.5, 'place': '47 km NNE of Petersville, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 6, 55, 13, 694671)}
+2025-10-02 02:02:12 | INFO | New quake: {'lon': -149.3803, 'lat': 61.2814, 'mag': 1.5, 'place': '10 km ESE of Eagle River, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 7, 2, 12, 148215)}
+2025-10-02 02:06:10 | INFO | New quake: {'lon': -66.8306666666667, 'lat': 17.9751666666667, 'mag': 2.44, 'place': '2 km SSW of Indios, Puerto Rico', 'timestamp': datetime.datetime(2025, 10, 2, 7, 6, 10, 229820)}
+2025-10-02 02:14:11 | INFO | New quake: {'lon': -150.8187, 'lat': 63.1676, 'mag': 2.8, 'place': '61 km SE of Denali National Park, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 7, 14, 11, 147972)}
+2025-10-02 02:16:10 | INFO | New quake: {'lon': -155.3639, 'lat': 57.6157, 'mag': 4.8, 'place': '54 km W of Karluk, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 7, 16, 10, 125294)}
+2025-10-02 02:28:13 | INFO | New quake: {'lon': -148.2966, 'lat': 61.3884, 'mag': 2, 'place': '33 km ESE of Knik River, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 7, 28, 13, 678702)}
+2025-10-02 02:30:12 | INFO | New quake: {'lon': -155.3496, 'lat': 57.6317, 'mag': 1.5, 'place': '53 km W of Karluk, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 7, 30, 12, 427825)}
+2025-10-02 02:30:12 | INFO | New quake: {'lon': -116.7164993, 'lat': 33.644165, 'mag': 0.95, 'place': '11 km S of Idyllwild, CA', 'timestamp': datetime.datetime(2025, 10, 2, 7, 30, 12, 683939)}
+2025-10-02 02:39:14 | INFO | New quake: {'lon': -155.3815, 'lat': 57.6351, 'mag': 2.2, 'place': '55 km W of Karluk, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 7, 39, 14, 963535)}
+2025-10-02 03:09:45 | INFO | New quake: {'lon': -117.7423, 'lat': 36.8353, 'mag': 1.6, 'place': '38 km NE of Lone Pine, California', 'timestamp': datetime.datetime(2025, 10, 2, 8, 9, 45, 442889)}
+2025-10-02 03:22:50 | INFO | New quake: {'lon': -155.3955, 'lat': 57.6626, 'mag': 1.6, 'place': '57 km W of Karluk, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 8, 22, 50, 727900)}
+2025-10-02 03:25:51 | INFO | New quake: {'lon': -122.809669494629, 'lat': 38.833667755127, 'mag': 0.61, 'place': '8 km W of Cobb, CA', 'timestamp': datetime.datetime(2025, 10, 2, 8, 25, 51, 555669)}
+2025-10-02 03:29:54 | INFO | New quake: {'lon': -103.861, 'lat': 31.455, 'mag': 1.7, 'place': '16 km NNW of Toyah, Texas', 'timestamp': datetime.datetime(2025, 10, 2, 8, 29, 54, 553939)}
+2025-10-02 03:36:52 | INFO | New quake: {'lon': 121.2708, 'lat': 19.9089, 'mag': 4.7, 'place': '94 km SW of Basco, Philippines', 'timestamp': datetime.datetime(2025, 10, 2, 8, 36, 52, 905336)}
+2025-10-02 03:42:55 | INFO | New quake: {'lon': -155.916000366211, 'lat': 19.4731674194336, 'mag': 2.28, 'place': '2 km SSE of Captain Cook, Hawaii', 'timestamp': datetime.datetime(2025, 10, 2, 8, 42, 55, 13992)}
+2025-10-02 03:51:53 | INFO | New quake: {'lon': -147.4222, 'lat': 61.4315, 'mag': 1.7, 'place': '43 km SSE of Glacier View, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 8, 51, 53, 224605)}
+2025-10-02 03:52:50 | INFO | New quake: {'lon': -122.497497558594, 'lat': 38.6833343505859, 'mag': 1.14, 'place': '13 km NNW of Angwin, CA', 'timestamp': datetime.datetime(2025, 10, 2, 8, 52, 50, 55921)}
+2025-10-02 04:08:52 | INFO | New quake: {'lon': -116.392, 'lat': 33.1241667, 'mag': 0.39, 'place': '15 km S of Borrego Springs, CA', 'timestamp': datetime.datetime(2025, 10, 2, 9, 8, 52, 248113)}
+2025-10-02 04:11:53 | INFO | New quake: {'lon': -149.4213, 'lat': 63.2768, 'mag': 1.6, 'place': '26 km WSW of Cantwell, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 9, 11, 53, 323568)}
+2025-10-02 04:20:50 | INFO | New quake: {'lon': -155.3581, 'lat': 57.6489, 'mag': 1.9, 'place': '54 km W of Karluk, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 9, 20, 50, 948588)}
+2025-10-02 04:25:50 | INFO | New quake: {'lon': -117.2631, 'lat': 37.4476, 'mag': 1.2, 'place': '29 km S of Goldfield, Nevada', 'timestamp': datetime.datetime(2025, 10, 2, 9, 25, 50, 491072)}
+2025-10-02 04:32:54 | INFO | New quake: {'lon': -155.3886, 'lat': 57.6456, 'mag': 2.3, 'place': '56 km W of Karluk, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 9, 32, 54, 345770)}
+2025-10-02 04:35:49 | INFO | New quake: {'lon': -155.3896, 'lat': 57.6474, 'mag': 2.2, 'place': '56 km W of Karluk, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 9, 35, 49, 905743)}
+2025-10-02 04:41:54 | INFO | New quake: {'lon': -117.2586, 'lat': 37.4608, 'mag': 1.6, 'place': '27 km S of Goldfield, Nevada', 'timestamp': datetime.datetime(2025, 10, 2, 9, 41, 54, 407629)}
+2025-10-02 04:42:51 | INFO | New quake: {'lon': -117.2366, 'lat': 37.469, 'mag': 2.3, 'place': '26 km S of Goldfield, Nevada', 'timestamp': datetime.datetime(2025, 10, 2, 9, 42, 51, 427808)}
+2025-10-02 04:43:53 | INFO | New quake: {'lon': -117.2138367, 'lat': 34.0053329, 'mag': 1.04, 'place': '6 km SSW of Redlands, CA', 'timestamp': datetime.datetime(2025, 10, 2, 9, 43, 53, 564636)}
+2025-10-02 04:45:52 | INFO | New quake: {'lon': -117.2066, 'lat': 37.4076, 'mag': 0.8, 'place': '33 km S of Goldfield, Nevada', 'timestamp': datetime.datetime(2025, 10, 2, 9, 45, 52, 388064)}
+2025-10-02 05:15:51 | INFO | New quake: {'lon': -117.2531, 'lat': 37.4584, 'mag': 1.2, 'place': '27 km S of Goldfield, Nevada', 'timestamp': datetime.datetime(2025, 10, 2, 10, 15, 51, 241434)}
+2025-10-02 05:17:50 | INFO | New quake: {'lon': -122.782997131348, 'lat': 38.8358345031738, 'mag': 1.02, 'place': '5 km WNW of Cobb, CA', 'timestamp': datetime.datetime(2025, 10, 2, 10, 17, 50, 18466)}
+2025-10-02 05:21:52 | INFO | New quake: {'lon': -117.2604, 'lat': 37.4585, 'mag': 1.2, 'place': '27 km S of Goldfield, Nevada', 'timestamp': datetime.datetime(2025, 10, 2, 10, 21, 52, 875609)}
+2025-10-02 05:24:53 | INFO | New quake: {'lon': -122.780502319336, 'lat': 38.8041648864746, 'mag': 0.7, 'place': '4 km NW of The Geysers, CA', 'timestamp': datetime.datetime(2025, 10, 2, 10, 24, 53, 900475)}
+2025-10-02 05:26:52 | INFO | New quake: {'lon': 160.7447, 'lat': 52.0619, 'mag': 4.7, 'place': '181 km SE of Petropavlovsk-Kamchatsky, Russia', 'timestamp': datetime.datetime(2025, 10, 2, 10, 26, 52, 714115)}
+2025-10-02 05:35:42 | WARNING | Consumer interrupted.
+2025-10-02 05:50:48 | INFO | Logging to file: logs/project_log.log
+2025-10-02 05:50:48 | INFO | Log sanitization enabled, personal info removed
+2025-10-02 05:51:03 | INFO | START earthquake consumer
+2025-10-02 05:51:03 | INFO | Kafka broker address: localhost:9092
+2025-10-02 05:51:03 | INFO | Creating Kafka consumer. Topic='project_json' and group ID='buzz_group'.
+2025-10-02 05:51:03 | INFO | Kafka consumer created successfully.
+2025-10-02 05:51:03 | INFO | Consuming from topic 'project_json' in group 'buzz_group'...
+2025-10-02 05:51:06 | INFO | New quake: {'lon': -97.882, 'lat': 29.035, 'mag': 2.3, 'place': '14 km ENE of Falls City, Texas', 'timestamp': datetime.datetime(2025, 10, 2, 10, 51, 6, 626712)}
+2025-10-02 05:51:10 | INFO | New quake: {'lon': -153.1934, 'lat': 57.9294, 'mag': 2.6, 'place': '19 km WNW of Port Lions, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 10, 51, 10, 305781)}
+2025-10-02 05:51:10 | INFO | New quake: {'lon': -117.2399, 'lat': 37.404, 'mag': 0.6, 'place': '33 km S of Goldfield, Nevada', 'timestamp': datetime.datetime(2025, 10, 2, 10, 51, 10, 489882)}
+2025-10-02 06:01:52 | INFO | New quake: {'lon': -71.8514, 'lat': -30.6637, 'mag': 5.4, 'place': '62 km W of Ovalle, Chile', 'timestamp': datetime.datetime(2025, 10, 2, 11, 1, 52, 465011)}
+2025-10-02 06:07:54 | INFO | New quake: {'lon': -122.805168151855, 'lat': 38.7960014343262, 'mag': 1.05, 'place': '5 km WNW of The Geysers, CA', 'timestamp': datetime.datetime(2025, 10, 2, 11, 7, 54, 286179)}
+2025-10-02 06:18:50 | INFO | New quake: {'lon': -122.802001953125, 'lat': 38.8373336791992, 'mag': 1.27, 'place': '7 km WNW of Cobb, CA', 'timestamp': datetime.datetime(2025, 10, 2, 11, 18, 50, 460326)}
+2025-10-02 06:45:53 | INFO | New quake: {'lon': -97.876, 'lat': 29.033, 'mag': 1.7, 'place': '14 km ENE of Falls City, Texas', 'timestamp': datetime.datetime(2025, 10, 2, 11, 45, 53, 3984)}
+2025-10-02 06:57:51 | INFO | New quake: {'lon': -104.027, 'lat': 31.581, 'mag': 2.2, 'place': '36 km NW of Toyah, Texas', 'timestamp': datetime.datetime(2025, 10, 2, 11, 57, 51, 364068)}
+2025-10-02 06:58:53 | INFO | New quake: {'lon': -104.025, 'lat': 31.581, 'mag': 1.5, 'place': '36 km NW of Toyah, Texas', 'timestamp': datetime.datetime(2025, 10, 2, 11, 58, 53, 380622)}
+2025-10-02 07:02:51 | INFO | New quake: {'lon': -122.761329650879, 'lat': 38.7900009155273, 'mag': 0.74, 'place': '1 km NNW of The Geysers, CA', 'timestamp': datetime.datetime(2025, 10, 2, 12, 2, 51, 111479)}
+2025-10-02 07:02:51 | INFO | New quake: {'lon': -104.012, 'lat': 31.569, 'mag': 1.5, 'place': '35 km NW of Toyah, Texas', 'timestamp': datetime.datetime(2025, 10, 2, 12, 2, 51, 284195)}
+2025-10-02 07:04:50 | INFO | New quake: {'lon': -122.801002502441, 'lat': 38.8376655578613, 'mag': 1.76, 'place': '7 km WNW of Cobb, CA', 'timestamp': datetime.datetime(2025, 10, 2, 12, 4, 50, 4500)}
+2025-10-02 07:06:54 | INFO | New quake: {'lon': -122.802169799805, 'lat': 38.8381652832031, 'mag': 0.99, 'place': '7 km WNW of Cobb, CA', 'timestamp': datetime.datetime(2025, 10, 2, 12, 6, 54, 58868)}
+2025-10-02 07:06:54 | INFO | New quake: {'lon': -122.761169433594, 'lat': 38.7895011901855, 'mag': 1.28, 'place': '1 km NNW of The Geysers, CA', 'timestamp': datetime.datetime(2025, 10, 2, 12, 6, 54, 247063)}
+2025-10-02 07:14:54 | INFO | New quake: {'lon': -101.748, 'lat': 31.899, 'mag': 1.6, 'place': '25 km W of Garden City, Texas', 'timestamp': datetime.datetime(2025, 10, 2, 12, 14, 54, 908421)}
+2025-10-02 07:14:55 | INFO | New quake: {'lon': 27.9917, 'lat': 40.7968, 'mag': 5, 'place': '19 km S of Marmara Ereğlisi, Turkey', 'timestamp': datetime.datetime(2025, 10, 2, 12, 14, 55, 113657)}
+2025-10-02 07:55:54 | INFO | New quake: {'lon': -157.1033, 'lat': 55.8901, 'mag': 2.9, 'place': '92 km ESE of Chignik, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 12, 55, 54, 695137)}
+2025-10-02 07:58:50 | INFO | New quake: {'lon': -122.759498596191, 'lat': 38.8230018615723, 'mag': 1.43, 'place': '3 km W of Cobb, CA', 'timestamp': datetime.datetime(2025, 10, 2, 12, 58, 50, 408942)}
+2025-10-02 08:10:54 | INFO | New quake: {'lon': -150.8832, 'lat': 63.0132, 'mag': 1.5, 'place': '57 km N of Petersville, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 13, 10, 54, 198851)}
+2025-10-02 08:35:52 | INFO | New quake: {'lon': -122.765998840332, 'lat': 38.8198318481445, 'mag': 0.73, 'place': '4 km W of Cobb, CA', 'timestamp': datetime.datetime(2025, 10, 2, 13, 35, 52, 853762)}
+2025-10-02 08:36:49 | INFO | New quake: {'lon': -122.781829833984, 'lat': 38.8396682739258, 'mag': 0.7, 'place': '5 km WNW of Cobb, CA', 'timestamp': datetime.datetime(2025, 10, 2, 13, 36, 49, 869103)}
+2025-10-02 08:45:52 | INFO | New quake: {'lon': -122.780166625977, 'lat': 38.8013343811035, 'mag': 2.25, 'place': '3 km NW of The Geysers, CA', 'timestamp': datetime.datetime(2025, 10, 2, 13, 45, 52, 427087)}
+2025-10-02 08:50:52 | INFO | New quake: {'lon': -151.8853, 'lat': 59.4857, 'mag': 1.8, 'place': '11 km WNW of Seldovia, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 13, 50, 52, 186371)}
+2025-10-02 09:07:52 | INFO | New quake: {'lon': -117.0908356, 'lat': 34.2373352, 'mag': 1.04, 'place': '4 km NNE of Running Springs, CA', 'timestamp': datetime.datetime(2025, 10, 2, 14, 7, 52, 889820)}
+2025-10-02 09:11:50 | INFO | New quake: {'lon': -116.2056656, 'lat': 33.9039993, 'mag': 1.72, 'place': '19 km ENE of Thousand Palms, CA', 'timestamp': datetime.datetime(2025, 10, 2, 14, 11, 50, 688638)}
+2025-10-02 09:26:49 | INFO | New quake: {'lon': -117.2343369, 'lat': 33.899334, 'mag': 1.17, 'place': '3 km ENE of March Air Reserve Base, CA', 'timestamp': datetime.datetime(2025, 10, 2, 14, 26, 49, 953865)}
+2025-10-02 09:29:50 | INFO | New quake: {'lon': -122.781829833984, 'lat': 38.8400001525879, 'mag': 0.22, 'place': '5 km WNW of Cobb, CA', 'timestamp': datetime.datetime(2025, 10, 2, 14, 29, 50, 750051)}
+2025-10-02 09:38:53 | INFO | New quake: {'lon': 167.4307, 'lat': -15.1223, 'mag': 5, 'place': '39 km ESE of Port-Olry, Vanuatu', 'timestamp': datetime.datetime(2025, 10, 2, 14, 38, 53, 796306)}
+2025-10-02 10:16:51 | INFO | New quake: {'lon': -110.680666666667, 'lat': 44.6281666666667, 'mag': 0.53, 'place': '33 km E of West Yellowstone, Montana', 'timestamp': datetime.datetime(2025, 10, 2, 15, 16, 51, 851267)}
+2025-10-02 10:19:50 | INFO | New quake: {'lon': 159.9148, 'lat': 53.2181, 'mag': 4.5, 'place': '87 km E of Petropavlovsk-Kamchatsky, Russia', 'timestamp': datetime.datetime(2025, 10, 2, 15, 19, 50, 8447)}
+2025-10-02 10:30:51 | INFO | New quake: {'lon': -155.3603, 'lat': 57.6388, 'mag': 3.1, 'place': '54 km W of Karluk, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 15, 30, 51, 759201)}
+2025-10-02 10:30:51 | INFO | New quake: {'lon': -102.196, 'lat': 32.119, 'mag': 1.3, 'place': '17 km NW of Midland, Texas', 'timestamp': datetime.datetime(2025, 10, 2, 15, 30, 51, 934219)}
+2025-10-02 10:30:52 | INFO | New quake: {'lon': -102.199, 'lat': 32.121, 'mag': 1.2, 'place': '17 km NW of Midland, Texas', 'timestamp': datetime.datetime(2025, 10, 2, 15, 30, 52, 76544)}
+2025-10-02 10:34:52 | INFO | New quake: {'lon': -122.762496948242, 'lat': 38.8213348388672, 'mag': 1.04, 'place': '3 km W of Cobb, CA', 'timestamp': datetime.datetime(2025, 10, 2, 15, 34, 52, 933693)}
+2025-10-02 10:53:53 | INFO | New quake: {'lon': -101.842, 'lat': 32.255, 'mag': 1.6, 'place': '14 km NNW of Stanton, Texas', 'timestamp': datetime.datetime(2025, 10, 2, 15, 53, 53, 300148)}
+2025-10-02 10:54:51 | INFO | New quake: {'lon': -122.793998718262, 'lat': 38.8165016174316, 'mag': 1.51, 'place': '5 km NW of The Geysers, CA', 'timestamp': datetime.datetime(2025, 10, 2, 15, 54, 51, 223051)}
+2025-10-02 11:03:52 | INFO | New quake: {'lon': -155.4153, 'lat': 57.6554, 'mag': 1.7, 'place': '58 km W of Karluk, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 16, 3, 52, 329349)}
+2025-10-02 11:07:54 | INFO | New quake: {'lon': -97.889, 'lat': 29.041, 'mag': 1, 'place': '14 km ENE of Falls City, Texas', 'timestamp': datetime.datetime(2025, 10, 2, 16, 7, 54, 119968)}
+2025-10-02 11:16:50 | INFO | New quake: {'lon': -116.2923333, 'lat': 33.2623333, 'mag': 0.76, 'place': '8 km E of Borrego Springs, CA', 'timestamp': datetime.datetime(2025, 10, 2, 16, 16, 50, 295006)}
+2025-10-02 11:17:53 | INFO | New quake: {'lon': -119.065, 'lat': 39.1468, 'mag': 1.6, 'place': '19 km NNE of Yerington, Nevada', 'timestamp': datetime.datetime(2025, 10, 2, 16, 17, 53, 448167)}
+2025-10-02 11:22:53 | INFO | New quake: {'lon': -145.4669, 'lat': 63.3421, 'mag': 1.2, 'place': '29 km NNE of Paxson, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 16, 22, 53, 355265)}
+2025-10-02 11:22:53 | INFO | New quake: {'lon': -122.731834411621, 'lat': 38.764331817627, 'mag': 0.91, 'place': '3 km SE of The Geysers, CA', 'timestamp': datetime.datetime(2025, 10, 2, 16, 22, 53, 535213)}
+2025-10-02 11:38:50 | INFO | New quake: {'lon': -116.5267, 'lat': 38.1687, 'mag': 2.2, 'place': '62 km E of Tonopah, Nevada', 'timestamp': datetime.datetime(2025, 10, 2, 16, 38, 50, 635803)}
+2025-10-02 11:49:53 | INFO | New quake: {'lon': -97.88, 'lat': 29.045, 'mag': 1.9, 'place': '15 km ENE of Falls City, Texas', 'timestamp': datetime.datetime(2025, 10, 2, 16, 49, 53, 712554)}
+2025-10-02 11:49:53 | INFO | New quake: {'lon': 158.9395, 'lat': 51.4471, 'mag': 4.4, 'place': '169 km SSE of Vilyuchinsk, Russia', 'timestamp': datetime.datetime(2025, 10, 2, 16, 49, 53, 916537)}
+2025-10-02 11:55:51 | INFO | New quake: {'lon': -122.78133392334, 'lat': 38.8035011291504, 'mag': 0.47, 'place': '4 km NW of The Geysers, CA', 'timestamp': datetime.datetime(2025, 10, 2, 16, 55, 51, 344658)}
+2025-10-02 11:56:54 | INFO | New quake: {'lon': -102.115, 'lat': 32.099, 'mag': 1.1, 'place': '11 km NNW of Midland, Texas', 'timestamp': datetime.datetime(2025, 10, 2, 16, 56, 54, 569212)}
+2025-10-02 11:57:52 | INFO | New quake: {'lon': -145.2933, 'lat': 62.5042, 'mag': 1.5, 'place': '22 km N of Gakona, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 16, 57, 52, 620269)}
+2025-10-02 12:06:50 | INFO | New quake: {'lon': -117.4769974, 'lat': 35.6196671, 'mag': 1.59, 'place': '18 km SSW of Searles Valley, CA', 'timestamp': datetime.datetime(2025, 10, 2, 17, 6, 50, 92810)}
+2025-10-02 12:21:54 | INFO | New quake: {'lon': -122.463165283203, 'lat': 37.5921669006348, 'mag': 2.11, 'place': '3 km SE of Pacifica, CA', 'timestamp': datetime.datetime(2025, 10, 2, 17, 21, 54, 870576)}
+2025-10-02 12:22:52 | INFO | New quake: {'lon': -122.461669921875, 'lat': 37.5945014953613, 'mag': 1.81, 'place': '3 km SE of Pacifica, CA', 'timestamp': datetime.datetime(2025, 10, 2, 17, 22, 52, 781135)}
+2025-10-02 12:25:51 | INFO | New quake: {'lon': -155.4078, 'lat': 57.661, 'mag': 1.4, 'place': '57 km W of Karluk, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 17, 25, 51, 513896)}
+2025-10-02 12:29:53 | INFO | New quake: {'lon': -122.460670471191, 'lat': 37.5943336486816, 'mag': 1.8, 'place': '3 km SE of Pacifica, CA', 'timestamp': datetime.datetime(2025, 10, 2, 17, 29, 53, 817830)}
+2025-10-02 12:31:54 | INFO | New quake: {'lon': -97.923, 'lat': 28.63, 'mag': 1.6, 'place': '8 km ESE of Pawnee, Texas', 'timestamp': datetime.datetime(2025, 10, 2, 17, 31, 54, 609379)}
+2025-10-02 12:34:53 | INFO | New quake: {'lon': -177.7807, 'lat': -18.1209, 'mag': 4.4, 'place': 'Fiji region', 'timestamp': datetime.datetime(2025, 10, 2, 17, 34, 53, 903108)}
+2025-10-02 12:36:54 | INFO | New quake: {'lon': -102.198, 'lat': 32.12, 'mag': 1, 'place': '17 km NW of Midland, Texas', 'timestamp': datetime.datetime(2025, 10, 2, 17, 36, 54, 559468)}
+2025-10-02 12:37:52 | INFO | New quake: {'lon': -122.806335449219, 'lat': 38.8156661987305, 'mag': 1.53, 'place': '6 km NW of The Geysers, CA', 'timestamp': datetime.datetime(2025, 10, 2, 17, 37, 52, 867363)}
+2025-10-02 12:38:50 | INFO | New quake: {'lon': -104.311, 'lat': 31.591, 'mag': 2.2, 'place': '57 km WNW of Toyah, Texas', 'timestamp': datetime.datetime(2025, 10, 2, 17, 38, 50, 947191)}
+2025-10-02 12:49:54 | INFO | New quake: {'lon': -155.4321, 'lat': 57.4759, 'mag': 0.1, 'place': '59 km W of Karluk, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 17, 49, 54, 140553)}
+2025-10-02 12:50:52 | INFO | New quake: {'lon': -150.6676, 'lat': 63.0321, 'mag': 1.5, 'place': '59 km N of Petersville, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 17, 50, 52, 464617)}
+2025-10-02 12:52:53 | INFO | New quake: {'lon': -150.5874, 'lat': 62.9565, 'mag': 1.4, 'place': '52 km N of Petersville, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 17, 52, 53, 782105)}
+2025-10-02 12:53:51 | INFO | New quake: {'lon': -121.221496582031, 'lat': 36.3783340454102, 'mag': 1.4, 'place': '7 km NNE of Greenfield, CA', 'timestamp': datetime.datetime(2025, 10, 2, 17, 53, 51, 284583)}
+2025-10-02 12:54:54 | INFO | New quake: {'lon': -149.9248, 'lat': 64.5571, 'mag': 2.4, 'place': '38 km W of Four Mile Road, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 17, 54, 54, 532955)}
+2025-10-02 12:56:51 | INFO | New quake: {'lon': -97.93033333, 'lat': 35.32216667, 'mag': 0.92, 'place': '1 km NE of Minco, Oklahoma', 'timestamp': datetime.datetime(2025, 10, 2, 17, 56, 51, 8827)}
+2025-10-02 12:56:51 | INFO | New quake: {'lon': 171.1758, 'lat': -22.8152, 'mag': 4.7, 'place': 'southeast of the Loyalty Islands', 'timestamp': datetime.datetime(2025, 10, 2, 17, 56, 51, 192131)}
+2025-10-02 13:01:51 | INFO | New quake: {'lon': -101.916, 'lat': 32.109, 'mag': 1, 'place': '12 km W of Stanton, Texas', 'timestamp': datetime.datetime(2025, 10, 2, 18, 1, 51, 427896)}
+2025-10-02 13:09:53 | INFO | New quake: {'lon': -150.6372, 'lat': 60.8428, 'mag': 1.4, 'place': '9 km SSE of Point Possession, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 18, 9, 53, 867275)}
+2025-10-02 13:11:54 | INFO | New quake: {'lon': -104.261, 'lat': 31.71, 'mag': 2.1, 'place': '52 km SSE of Whites City, New Mexico', 'timestamp': datetime.datetime(2025, 10, 2, 18, 11, 54, 566959)}
+2025-10-02 13:24:50 | INFO | New quake: {'lon': -151.0712, 'lat': 60.501, 'mag': 2.4, 'place': '1 km NNW of Soldotna, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 18, 24, 50, 307443)}
+2025-10-02 13:41:53 | INFO | New quake: {'lon': 161.0799, 'lat': 52.7745, 'mag': 4.9, 'place': '168 km ESE of Petropavlovsk-Kamchatsky, Russia', 'timestamp': datetime.datetime(2025, 10, 2, 18, 41, 53, 654746)}
+2025-10-02 13:55:52 | INFO | New quake: {'lon': -116.2955, 'lat': 36.7138, 'mag': 0.3, 'place': '46 km ESE of Beatty, Nevada', 'timestamp': datetime.datetime(2025, 10, 2, 18, 55, 52, 935611)}
+2025-10-02 14:01:52 | INFO | New quake: {'lon': 160.023, 'lat': 51.5604, 'mag': 4.7, 'place': '188 km SE of Vilyuchinsk, Russia', 'timestamp': datetime.datetime(2025, 10, 2, 19, 1, 52, 46340)}
+2025-10-02 14:05:55 | INFO | New quake: {'lon': -179.9723, 'lat': -24.158, 'mag': 4.3, 'place': 'south of the Fiji Islands', 'timestamp': datetime.datetime(2025, 10, 2, 19, 5, 55, 119262)}
+2025-10-02 14:06:52 | INFO | New quake: {'lon': -155.5815, 'lat': 58.0235, 'mag': 1.1, 'place': '83 km NW of Karluk, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 19, 6, 52, 578550)}
+2025-10-02 14:10:50 | INFO | New quake: {'lon': -149.8923, 'lat': 62.9378, 'mag': 1.6, 'place': '55 km N of Chase, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 19, 10, 50, 299400)}
+2025-10-02 14:13:50 | INFO | New quake: {'lon': -154.2125, 'lat': 58.955, 'mag': 1.5, 'place': '62 km SSE of Kokhanok, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 19, 13, 50, 736112)}
+2025-10-02 14:13:51 | INFO | New quake: {'lon': 175.6804, 'lat': -38.5629, 'mag': 4.1, 'place': '34 km WNW of Acacia Bay, New Zealand', 'timestamp': datetime.datetime(2025, 10, 2, 19, 13, 51, 46276)}
+2025-10-02 14:25:53 | INFO | New quake: {'lon': -116.8040009, 'lat': 33.9828339, 'mag': 1.13, 'place': '7 km NNW of Cabazon, CA', 'timestamp': datetime.datetime(2025, 10, 2, 19, 25, 53, 563465)}
+2025-10-02 14:26:51 | INFO | New quake: {'lon': -116.5906677, 'lat': 33.9049988, 'mag': 0.98, 'place': '4 km W of Garnet, CA', 'timestamp': datetime.datetime(2025, 10, 2, 19, 26, 51, 788877)}
+2025-10-02 14:28:52 | INFO | New quake: {'lon': -102.203, 'lat': 32.117, 'mag': 1.1, 'place': '17 km NW of Midland, Texas', 'timestamp': datetime.datetime(2025, 10, 2, 19, 28, 52, 700829)}
+2025-10-02 14:42:52 | INFO | New quake: {'lon': -122.158668518066, 'lat': 38.1238327026367, 'mag': 2.13, 'place': '7 km E of Vallejo, CA', 'timestamp': datetime.datetime(2025, 10, 2, 19, 42, 52, 668508)}
+2025-10-02 14:44:54 | INFO | New quake: {'lon': -122.757835388184, 'lat': 38.7763328552246, 'mag': 1.07, 'place': '0 km SW of The Geysers, CA', 'timestamp': datetime.datetime(2025, 10, 2, 19, 44, 54, 476672)}
+2025-10-02 14:48:51 | INFO | New quake: {'lon': -112.485666666667, 'lat': 46.021, 'mag': 0.93, 'place': '4 km ESE of Walkerville, Montana', 'timestamp': datetime.datetime(2025, 10, 2, 19, 48, 51, 708452)}
+2025-10-02 14:57:49 | INFO | New quake: {'lon': -118.0038333, 'lat': 33.6751667, 'mag': 1.28, 'place': '2 km S of Huntington Beach, CA', 'timestamp': datetime.datetime(2025, 10, 2, 19, 57, 49, 710817)}
+2025-10-02 15:10:51 | INFO | New quake: {'lon': -104.34, 'lat': 31.656, 'mag': 1.5, 'place': '57 km S of Whites City, New Mexico', 'timestamp': datetime.datetime(2025, 10, 2, 20, 10, 51, 583717)}
+2025-10-02 15:18:52 | INFO | New quake: {'lon': -116.4048333, 'lat': 33.4748333, 'mag': 0.71, 'place': '23 km SSW of La Quinta, CA', 'timestamp': datetime.datetime(2025, 10, 2, 20, 18, 52, 9137)}
+2025-10-02 15:28:50 | INFO | New quake: {'lon': -122.78483581543, 'lat': 38.8346672058105, 'mag': 1.13, 'place': '6 km WNW of Cobb, CA', 'timestamp': datetime.datetime(2025, 10, 2, 20, 28, 50, 173030)}
+2025-10-02 15:41:51 | INFO | New quake: {'lon': -119.0149, 'lat': 39.076, 'mag': 1.4, 'place': '16 km NE of Yerington, Nevada', 'timestamp': datetime.datetime(2025, 10, 2, 20, 41, 51, 550512)}
+2025-10-02 15:43:53 | INFO | New quake: {'lon': -117.6811676, 'lat': 35.9393349, 'mag': 1.16, 'place': '20 km E of Little Lake, CA', 'timestamp': datetime.datetime(2025, 10, 2, 20, 43, 53, 401908)}
+2025-10-02 15:45:49 | INFO | New quake: {'lon': -152.3872, 'lat': 59.8033, 'mag': 1.6, 'place': '31 km W of Anchor Point, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 20, 45, 49, 335079)}
+2025-10-02 15:52:52 | INFO | New quake: {'lon': 53.013, 'lat': 33.8578, 'mag': 5.1, 'place': '80 km NE of Ardestān, Iran', 'timestamp': datetime.datetime(2025, 10, 2, 20, 52, 52, 587393)}
+2025-10-02 15:53:50 | INFO | New quake: {'lon': -116.4169998, 'lat': 33.1711655, 'mag': 0.96, 'place': '10 km SSW of Borrego Springs, CA', 'timestamp': datetime.datetime(2025, 10, 2, 20, 53, 50, 984373)}
+2025-10-02 15:59:50 | INFO | New quake: {'lon': -116.7675, 'lat': 34.0198333, 'mag': 0.9, 'place': '12 km N of Cabazon, CA', 'timestamp': datetime.datetime(2025, 10, 2, 20, 59, 50, 760763)}
+2025-10-02 16:05:50 | INFO | New quake: {'lon': -122.835670471191, 'lat': 38.8375015258789, 'mag': 1.25, 'place': '10 km NW of The Geysers, CA', 'timestamp': datetime.datetime(2025, 10, 2, 21, 5, 50, 319327)}
+2025-10-02 16:34:52 | INFO | New quake: {'lon': -149.8667, 'lat': 64.5267, 'mag': 1.1, 'place': '36 km WSW of Four Mile Road, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 21, 34, 52, 324163)}
+2025-10-02 16:35:50 | INFO | New quake: {'lon': -101.139, 'lat': 32.324, 'mag': 1.4, 'place': '12 km WSW of Westbrook, Texas', 'timestamp': datetime.datetime(2025, 10, 2, 21, 35, 50, 773914)}
+2025-10-02 16:39:55 | INFO | New quake: {'lon': -122.783836364746, 'lat': 38.8390007019043, 'mag': 1.03, 'place': '6 km WNW of Cobb, CA', 'timestamp': datetime.datetime(2025, 10, 2, 21, 39, 55, 3894)}
+2025-10-02 16:43:53 | INFO | New quake: {'lon': -147.7608, 'lat': 61.6243, 'mag': 1.3, 'place': '21 km SSW of Glacier View, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 21, 43, 53, 561973)}
+2025-10-02 16:48:50 | INFO | New quake: {'lon': -63.5228, 'lat': -27.0636, 'mag': 5.7, 'place': '29 km W of El Hoyo, Argentina', 'timestamp': datetime.datetime(2025, 10, 2, 21, 48, 50, 90234)}
+2025-10-02 16:50:52 | INFO | New quake: {'lon': -97.91116667, 'lat': 35.3685, 'mag': 0.79, 'place': '3 km SE of Union City, Oklahoma', 'timestamp': datetime.datetime(2025, 10, 2, 21, 50, 52, 125221)}
+2025-10-02 16:59:52 | INFO | New quake: {'lon': -149.9729, 'lat': 60.7821, 'mag': 1.8, 'place': '23 km SW of Hope, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 21, 59, 52, 941071)}
+2025-10-02 17:00:51 | INFO | New quake: {'lon': 124.2953, 'lat': 10.9525, 'mag': 5.3, 'place': '13 km WNW of Bantiqui, Philippines', 'timestamp': datetime.datetime(2025, 10, 2, 22, 0, 51, 570948)}
+2025-10-02 17:05:53 | INFO | New quake: {'lon': -102.023, 'lat': 32.098, 'mag': 1.1, 'place': '12 km NNE of Midland, Texas', 'timestamp': datetime.datetime(2025, 10, 2, 22, 5, 53, 664411)}
+2025-10-02 17:19:51 | INFO | New quake: {'lon': -118.3314972, 'lat': 35.0481682, 'mag': 1.33, 'place': '14 km SE of Tehachapi, CA', 'timestamp': datetime.datetime(2025, 10, 2, 22, 19, 51, 854136)}
+2025-10-02 17:19:52 | INFO | New quake: {'lon': -138.8529, 'lat': 59.691, 'mag': 2.4, 'place': '51 km ENE of Yakutat, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 22, 19, 52, 85418)}
+2025-10-02 17:22:51 | INFO | New quake: {'lon': -122.852996826172, 'lat': 38.8211669921875, 'mag': 0.94, 'place': '10 km WNW of The Geysers, CA', 'timestamp': datetime.datetime(2025, 10, 2, 22, 22, 51, 643952)}
+2025-10-02 17:22:51 | INFO | New quake: {'lon': -116.7587, 'lat': 38.3372, 'mag': 2, 'place': '51 km NE of Tonopah, Nevada', 'timestamp': datetime.datetime(2025, 10, 2, 22, 22, 51, 869334)}
+2025-10-02 17:23:50 | INFO | New quake: {'lon': -116.6898333, 'lat': 33.3661667, 'mag': 0.46, 'place': '11 km NNW of Warner Springs, CA', 'timestamp': datetime.datetime(2025, 10, 2, 22, 23, 50, 175411)}
+2025-10-02 17:27:53 | INFO | New quake: {'lon': -115.354, 'lat': 35.9755, 'mag': 2, 'place': '9 km SSE of Blue Diamond, Nevada', 'timestamp': datetime.datetime(2025, 10, 2, 22, 27, 53, 616085)}
+2025-10-02 17:51:50 | INFO | New quake: {'lon': -155.467498779297, 'lat': 19.8708324432373, 'mag': 2.56, 'place': '21 km SSW of Pa‘auilo, Hawaii', 'timestamp': datetime.datetime(2025, 10, 2, 22, 51, 50, 989680)}
+2025-10-02 17:53:52 | INFO | New quake: {'lon': -117.4963303, 'lat': 33.8434982, 'mag': 1.51, 'place': '4 km SSE of Home Gardens, CA', 'timestamp': datetime.datetime(2025, 10, 2, 22, 53, 52, 753877)}
+2025-10-02 18:00:52 | INFO | New quake: {'lon': 136.3486, 'lat': -3.126, 'mag': 5.3, 'place': '97 km ENE of Nabire, Indonesia', 'timestamp': datetime.datetime(2025, 10, 2, 23, 0, 52, 132149)}
+2025-10-02 18:04:54 | INFO | New quake: {'lon': -114.9002, 'lat': 35.9432, 'mag': 1.9, 'place': '7 km WSW of Boulder City, Nevada', 'timestamp': datetime.datetime(2025, 10, 2, 23, 4, 54, 407328)}
+2025-10-02 18:13:50 | INFO | New quake: {'lon': -149.9296, 'lat': 63.0757, 'mag': 1.7, 'place': '60 km SW of Cantwell, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 23, 13, 50, 815229)}
+2025-10-02 18:14:54 | INFO | New quake: {'lon': -147.4451, 'lat': 64.9727, 'mag': 1.3, 'place': '8 km E of Fox, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 23, 14, 54, 700956)}
+2025-10-02 18:17:50 | INFO | New quake: {'lon': -152.5408, 'lat': 59.9303, 'mag': 2.2, 'place': '43 km WNW of Anchor Point, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 23, 17, 50, 735744)}
+2025-10-02 18:23:51 | INFO | New quake: {'lon': 136.3306, 'lat': -2.9722, 'mag': 4.5, 'place': '101 km ENE of Nabire, Indonesia', 'timestamp': datetime.datetime(2025, 10, 2, 23, 23, 51, 843353)}
+2025-10-02 18:26:51 | INFO | New quake: {'lon': -101.373, 'lat': 31.988, 'mag': 1.5, 'place': '13 km S of Forsan, Texas', 'timestamp': datetime.datetime(2025, 10, 2, 23, 26, 51, 715573)}
+2025-10-02 18:27:50 | INFO | New quake: {'lon': -116.6757, 'lat': 41.1997, 'mag': 2.7, 'place': '59 km NE of Valmy, Nevada', 'timestamp': datetime.datetime(2025, 10, 2, 23, 27, 50, 321935)}
+2025-10-02 18:28:54 | INFO | New quake: {'lon': -155.3685, 'lat': 57.6447, 'mag': 1.5, 'place': '55 km W of Karluk, Alaska', 'timestamp': datetime.datetime(2025, 10, 2, 23, 28, 54, 192743)}
+2025-10-02 18:32:53 | INFO | New quake: {'lon': -66.8678333333333, 'lat': 17.9801666666667, 'mag': 2.45, 'place': '2 km E of Maria Antonia, Puerto Rico', 'timestamp': datetime.datetime(2025, 10, 2, 23, 32, 53, 386209)}
+2025-10-02 18:40:52 | INFO | New quake: {'lon': -119.4106, 'lat': 39.4385, 'mag': 1.2, 'place': '7 km NNW of Stagecoach, Nevada', 'timestamp': datetime.datetime(2025, 10, 2, 23, 40, 52, 522851)}
+2025-10-02 18:55:50 | INFO | New quake: {'lon': -116.7214966, 'lat': 33.5336685, 'mag': 1.45, 'place': '5 km WSW of Anza, CA', 'timestamp': datetime.datetime(2025, 10, 2, 23, 55, 50, 480497)}
+2025-10-02 19:08:54 | INFO | New quake: {'lon': -122.853500366211, 'lat': 38.8271675109863, 'mag': 1.01, 'place': '10 km WNW of The Geysers, CA', 'timestamp': datetime.datetime(2025, 10, 3, 0, 8, 54, 29654)}
+2025-10-02 19:09:52 | INFO | New quake: {'lon': -122.854499816895, 'lat': 38.8278350830078, 'mag': 1.13, 'place': '10 km WNW of The Geysers, CA', 'timestamp': datetime.datetime(2025, 10, 3, 0, 9, 52, 931313)}
+2025-10-02 19:09:53 | INFO | New quake: {'lon': -99.132, 'lat': 28.925, 'mag': 2, 'place': '3 km WNW of North Pearsall, Texas', 'timestamp': datetime.datetime(2025, 10, 3, 0, 9, 53, 206702)}
+2025-10-02 19:16:53 | INFO | New quake: {'lon': -122.780670166016, 'lat': 38.8033332824707, 'mag': 0.78, 'place': '4 km NW of The Geysers, CA', 'timestamp': datetime.datetime(2025, 10, 3, 0, 16, 53, 465162)}
+2025-10-02 19:16:53 | INFO | New quake: {'lon': -99.093, 'lat': 28.831, 'mag': 1.8, 'place': '6 km S of Pearsall, Texas', 'timestamp': datetime.datetime(2025, 10, 3, 0, 16, 53, 652774)}
+2025-10-02 19:18:51 | INFO | New quake: {'lon': -147.8124, 'lat': 64.9335, 'mag': 1.2, 'place': '6 km WNW of Farmers Loop, Alaska', 'timestamp': datetime.datetime(2025, 10, 3, 0, 18, 51, 444870)}
+2025-10-02 19:20:08 | WARNING | Consumer interrupted.
+2025-10-02 19:20:09 | INFO | Consumer closed.
